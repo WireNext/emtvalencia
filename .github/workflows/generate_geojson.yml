@@ -3,8 +3,8 @@ name: Generate and Deploy GeoJSON
 on:
   push:
     branches:
-      - main  # Ejecutar cuando haya cambios en la rama `main`
-  workflow_dispatch: # Permite ejecutarlo manualmente
+      - main
+  workflow_dispatch:
 
 jobs:
   generate-geojson:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9
+          python-version: 3.9  # Cambia si necesitas otra versión
 
       - name: Install dependencies
         run: |
