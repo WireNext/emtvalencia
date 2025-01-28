@@ -26,11 +26,14 @@ def get_stops_with_retry(lat1, lon1, lat2, lon2):
         try:
             logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
             stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+            if not stops:  # Si no hay datos, loguear un aviso
+                logging.warning(f"No stops found for the area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
             return stops
         except Exception as e:
             logging.error(f"Attempt {attempt + 1} failed: {e}")
             if attempt == retries - 1:
-                raise  # Re-lanza el error después de varios intentos
+                logging.error("Max retries reached, skipping this area.")
+                return []  # Retorna lista vacía si se superaron los reintentos
             time.sleep(2)  # Espera antes de reintentar
 
 # Función para generar el GeoJSON
@@ -39,10 +42,10 @@ def create_geojson():
     for zone in zones:
         lat1, lon1, lat2, lon2 = zone
         stops = get_stops_with_retry(lat1, lon1, lat2, lon2)
-        if stops:
-            all_stops.extend(stops)
-        else:
-            logging.warning(f"No stops found for the area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
+        all_stops.extend(stops)
+    
+    if not all_stops:
+        logging.warning("No stops found in any of the zones.")
     
     features = []
     for stop in all_stops:
