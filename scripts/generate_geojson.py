@@ -5,17 +5,21 @@ import time
 # Función para obtener paradas en una extensión de coordenadas
 def get_stops_with_retry(lat1, lon1, lat2, lon2, retries=3):
     for _ in range(retries):
-        # Intentar obtener las paradas
-        stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
-        
-        # Si la respuesta tiene paradas, devolverlas
-        if stops:
-            return stops
-        
-        # Si no hay resultados, esperar un poco y reintentar
-        print(f"No stops found in the area: ({lat1}, {lon1}) to ({lat2}, {lon2}). Retrying...")
-        time.sleep(2)  # Esperar 2 segundos antes de reintentar
-    
+        try:
+            # Intentar obtener las paradas
+            stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+            
+            # Si la respuesta tiene paradas, devolverlas
+            if stops:
+                return stops
+            
+            # Si no hay resultados, esperar un poco y reintentar
+            print(f"No stops found in the area: ({lat1}, {lon1}) to ({lat2}, {lon2}). Retrying...")
+            time.sleep(2)  # Esperar 2 segundos antes de reintentar
+        except Exception as e:
+            print(f"Error retrieving stops: {e}")
+            time.sleep(2)  # Esperar 2 segundos antes de reintentar
+
     # Si no se encuentran paradas después de los reintentos, devolver una lista vacía
     print(f"No stops found after {retries} retries in area: ({lat1}, {lon1}) to ({lat2}, {lon2}).")
     return []
