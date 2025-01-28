@@ -27,12 +27,31 @@ def create_geojson(lat1, lon1, lat2, lon2):
 
     return geojson
 
+def fetch_all_stops():
+    # Dividir el área en 4 subáreas (ajustar según sea necesario)
+    subareas = [
+        (39.471964, -0.394641, 39.473000, -0.399000),
+        (39.473000, -0.399000, 39.474714, -0.405906),
+        (39.471964, -0.399000, 39.473000, -0.405906),
+        (39.473000, -0.405906, 39.474714, -0.411000),
+    ]
+    
+    geojson = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    
+    for lat1, lon1, lat2, lon2 in subareas:
+        print(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
+        # Obtener las paradas en la subárea
+        stops = create_geojson(lat1, lon1, lat2, lon2)
+        geojson["features"].extend(stops["features"])  # Agregar las paradas a la colección
 
+    return geojson
+
+# Generar y guardar el archivo GeoJSON
 if __name__ == "__main__":
-    lat1, lon1 = 39.471964, -0.394641
-    lat2, lon2 = 39.474714, -0.405906
-
-    geojson_data = create_geojson(lat1, lon1, lat2, lon2)
+    all_stops_geojson = fetch_all_stops()
     with open("data/stops.geojson", "w") as f:
-        json.dump(geojson_data, f, indent=4)
+        json.dump(all_stops_geojson, f, indent=4)
     print("Archivo GeoJSON generado: data/stops.geojson")
