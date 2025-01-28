@@ -62,10 +62,20 @@ def create_geojson(lat1, lon1, lat2, lon2):
 def fetch_all_stops():
     # Definir las coordenadas para dividir la ciudad en áreas más amplias
     subareas = [
+        # Centro de Valencia
         (39.460000, -0.390000, 39.510000, -0.420000),  # Área más grande que cubre el centro de Valencia
-        (39.471964, -0.394641, 39.476000, -0.400000),  # Subárea más amplia
-        (39.473000, -0.399000, 39.478000, -0.405000),  # Subárea
-        (39.474000, -0.405000, 39.479000, -0.410000)   # Otra subárea más amplia
+        
+        # Zona sur
+        (39.395000, -0.380000, 39.460000, -0.410000),  # Incluye barrios como Benicalap y Cruz Cubierta
+        
+        # Zona norte
+        (39.480000, -0.430000, 39.510000, -0.370000),  # Incluye la zona de la Malva-rosa, Albufera
+        
+        # Zona playa y alrededores
+        (39.375000, -0.400000, 39.420000, -0.430000),  # Costa y playa (Malva-rosa, Albufera)
+        
+        # Zona oeste
+        (39.460000, -0.460000, 39.510000, -0.490000)   # Zona más alejada hacia el oeste de la ciudad
     ]
     
     # Crear la estructura del GeoJSON
