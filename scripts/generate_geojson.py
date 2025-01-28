@@ -1,46 +1,71 @@
+import time
+import logging
 import emtvlcapi
 import geojson
 
-# Definir las coordenadas de Valencia y dividirla en zonas más pequeñas
-lat_min = 39.39  # Latitud mínima
-lat_max = 39.54  # Latitud máxima
-lon_min = -0.45  # Longitud mínima
-lon_max = -0.35  # Longitud máxima
+# Configura el logger
+logging.basicConfig(level=logging.INFO)
 
-# Definir el número de pasos para dividir la ciudad en cuadrantes más pequeños
-steps_lat = 5  # Número de zonas en latitud (aquí dividimos en 5 partes)
-steps_lon = 5  # Número de zonas en longitud (aquí dividimos en 5 partes)
+# Definir un área más grande para la búsqueda (ajusta las coordenadas)
+zones = [
+    (39.39, -0.45, 39.42, -0.43),
+    (39.42, -0.43, 39.45, -0.40),
+    (39.45, -0.40, 39.47, -0.38),
+    (39.47, -0.38, 39.50, -0.35),
+    (39.50, -0.35, 39.52, -0.33),
+    (39.52, -0.33, 39.54, -0.30),
+    (39.54, -0.30, 39.56, -0.28),
+    (39.56, -0.28, 39.58, -0.25),
+    (39.58, -0.25, 39.60, -0.22),
+]
 
-# Calcular el tamaño de cada zona
-lat_step = (lat_max - lat_min) / steps_lat
-lon_step = (lon_max - lon_min) / steps_lon
-
-# Función para dividir la ciudad en zonas más pequeñas y obtener las paradas
-def divide_and_get_stops():
-    all_stops = []  # Lista para almacenar todas las paradas
-    for i in range(steps_lat):
-        for j in range(steps_lon):
-            lat1 = lat_min + i * lat_step  # Latitud inferior de la zona
-            lon1 = lon_min + j * lon_step  # Longitud inferior de la zona
-            lat2 = lat_min + (i + 1) * lat_step  # Latitud superior de la zona
-            lon2 = lon_min + (j + 1) * lon_step  # Longitud superior de la zona
-            
-            # Imprimir las coordenadas de la zona que se está procesando
-            print(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
-            
-            # Obtener las paradas dentro del área de la zona
+# Función para obtener paradas con reintentos
+def get_stops_with_retry(lat1, lon1, lat2, lon2):
+    retries = 3
+    for attempt in range(retries):
+        try:
+            logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
             stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
-            
-            # Agregar las paradas obtenidas a la lista general
+            return stops
+        except Exception as e:
+            logging.error(f"Attempt {attempt + 1} failed: {e}")
+            if attempt == retries - 1:
+                raise  # Re-lanza el error después de varios intentos
+            time.sleep(2)  # Espera antes de reintentar
+
+# Función para generar el GeoJSON
+def create_geojson():
+    all_stops = []
+    for zone in zones:
+        lat1, lon1, lat2, lon2 = zone
+        stops = get_stops_with_retry(lat1, lon1, lat2, lon2)
+        if stops:
             all_stops.extend(stops)
+        else:
+            logging.warning(f"No stops found for the area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
     
-    return all_stops
+    features = []
+    for stop in all_stops:
+        # Crear un feature por cada parada
+        feature = geojson.Feature(
+            geometry=geojson.Point((float(stop['lon']), float(stop['lat']))),
+            properties={
+                "name": stop.get("name"),
+                "stopId": stop.get("stopId"),
+                "routes": stop.get("routes"),
+            }
+        )
+        features.append(feature)
+    
+    # Crear el archivo GeoJSON
+    feature_collection = geojson.FeatureCollection(features)
+    
+    # Guardar el archivo
+    with open('data/stops_with_bus_times.geojson', 'w') as f:
+        geojson.dump(feature_collection, f)
+    
+    logging.info(f"GeoJSON file created with {len(features)} features.")
 
-# Llamar a la función para obtener todas las paradas
-stops = divide_and_get_stops()
-
-# Generar el archivo GeoJSON con los datos obtenidos
-with open("data/stops.geojson", "w") as geojson_file:
-    geojson.dump(stops, geojson_file)
-
-print("GeoJSON generado exitosamente con todas las paradas de Valencia.")
+# Ejecutar la función para crear el GeoJSON
+if __name__ == "__main__":
+    create_geojson()
