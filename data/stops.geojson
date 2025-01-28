@@ -2902,15 +2902,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.397398718708205,
-                    39.4739891661836
+                    -0.393520455019153,
+                    39.4273433353314
                 ]
             },
             "properties": {
-                "name": "Democr\u00e0cia - Baladre",
-                "stopId": "2304",
-                "routes": "73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
-                "location": "C CASTAN TOBE\u00d1AS 18 - VAL\u00c8NCIA"
+                "name": "La Torre",
+                "stopId": "586",
+                "routes": "27 - Mercat Central",
+                "location": "C MANUEL IRANZO 1 - VAL\u00c8NCIA"
             }
         },
         {
@@ -2918,15 +2918,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.399309640546605,
-                    39.4742104895589
+                    -0.392912081096625,
+                    39.4299291653946
                 ]
             },
             "properties": {
-                "name": "Petxina - Torres",
-                "stopId": "1421",
-                "routes": "95 - Marina Real",
-                "location": "PSEG PECHINA 53 - VAL\u00c8NCIA"
+                "name": "Real de Madrid (parell) - Eduardo Dato",
+                "stopId": "583",
+                "routes": "9 - Forn d'Alcedo, 27 - la Torre",
+                "location": "AV REAL DE MADRID 100 - VAL\u00c8NCIA"
             }
         },
         {
@@ -2934,15 +2934,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.394850072688057,
-                    39.4738383686974
+                    -0.39260707639452,
+                    39.4303143363484
                 ]
             },
             "properties": {
-                "name": "P\u00e9rez Gald\u00f3s - Sant Josep de la Muntanya",
-                "stopId": "1865",
-                "routes": "67 - Nou Campanar",
-                "location": "AV PEREZ GALDOS 131 (DAVANT) - VAL\u00c8NCIA"
+                "name": "Real de Madrid - Entrada Pinet",
+                "stopId": "1413",
+                "routes": "9 - Estaci\u00f3 del Nord, 27 - Mercat Central",
+                "location": "AV REAL DE MADRID 101-103 - VAL\u00c8NCIA"
             }
         },
         {
@@ -2950,15 +2950,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.395542378252472,
-                    39.4744792697552
+                    -0.391611558430562,
+                    39.4332955399778
                 ]
             },
             "properties": {
-                "name": "P\u00e9rez Gald\u00f3s - Democr\u00e0cia",
-                "stopId": "425",
-                "routes": "67 - Estaci\u00f3 del Nord, 89 - Circular Ronda Tr\u00e0nsits",
-                "location": "AV PEREZ GALDOS 137 - VAL\u00c8NCIA"
+                "name": "Real de Madrid - Algar del Pal\u00e0ncia",
+                "stopId": "582",
+                "routes": "9 - Forn d'Alcedo, 27 - la Torre",
+                "location": "AV REAL DE MADRID 52 - VAL\u00c8NCIA"
             }
         },
         {
@@ -2966,15 +2966,1263 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.395372487768254,
-                    39.474582310034
+                    -0.391121435464334,
+                    39.4339585659278
                 ]
             },
             "properties": {
-                "name": "P\u00e9rez Gald\u00f3s - Doctor Zamenhof",
-                "stopId": "443",
+                "name": "Real de Madrid - Hell\u00edn",
+                "stopId": "588",
+                "routes": "9 - Estaci\u00f3 del Nord, 27 - Mercat Central",
+                "location": "AV REAL DE MADRID 39 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391038455778689,
+                    39.4348175362977
+                ]
+            },
+            "properties": {
+                "name": "Real de Madrid - Carretera d'Alba",
+                "stopId": "581",
+                "routes": "9 - Forn d'Alcedo, 27 - la Torre",
+                "location": "AV REAL DE MADRID 26 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390817216537338,
+                    39.4349413374712
+                ]
+            },
+            "properties": {
+                "name": "Real de Madrid - Concepci\u00f3n Arenal",
+                "stopId": "589",
+                "routes": "9 - Estaci\u00f3 del Nord, 27 - Mercat Central",
+                "location": "AV REAL DE MADRID 15 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393828837853927,
+                    39.4432725505335
+                ]
+            },
+            "properties": {
+                "name": "Pius IX - Salvador Perles",
+                "stopId": "1472",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "AV PIO IX S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.392978720844713,
+                    39.4451565623237
+                ]
+            },
+            "properties": {
+                "name": "Pius IX - Cabanilles",
+                "stopId": "1473",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "AV PIO IX 27 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396916117820181,
+                    39.4457785932514
+                ]
+            },
+            "properties": {
+                "name": "Acc\u00e9s Cementeri",
+                "stopId": "1474",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "CAMI VIEJO PICASENT S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.397940461281872,
+                    39.4429448294081
+                ]
+            },
+            "properties": {
+                "name": "Tanatori Municipal",
+                "stopId": "1475",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "CAMI VIEJO PICASENT S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402647625952551,
+                    39.451174824024
+                ]
+            },
+            "properties": {
+                "name": "Sant Isidre",
+                "stopId": "1936",
+                "routes": "72 - Sant Isidre, 73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C CAMPOS CRESPO 96 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.403865773657805,
+                    39.4526313389751
+                ]
+            },
+            "properties": {
+                "name": "Jos\u00e9 Andreu Alabarta - Mariano de Cavia",
+                "stopId": "524",
+                "routes": "72 - Estaci\u00f3 del Nord, 73 - Estaci\u00f3 del Nord",
+                "location": "C JOSE ANDREU ALABARTA 35 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.399385383899442,
+                    39.4530007576939
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus (parell) - Campos Crespo",
+                "stopId": "2100",
+                "routes": "99 - la Malva-rosa",
+                "location": "AV TRES CRUCES 133 CARRIL BUS (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402919248141488,
+                    39.4534284918188
+                ]
+            },
+            "properties": {
+                "name": "Arquitecte Segura de Lago - Doctor Rafael Bartual",
+                "stopId": "1937",
+                "routes": "72 - Sant Isidre, 73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C ARQUITECTO SEGURA DE LAGO 28 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.399690386333993,
+                    39.4540430861497
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus (imparell) - Campos Crespo",
+                "stopId": "2243",
+                "routes": "99 - Palau de Congressos",
+                "location": "AV TRES CRUCES S/N (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.405067064562335,
+                    39.4546949187202
+                ]
+            },
+            "properties": {
+                "name": "Jos\u00e9 Andreu Alabarta - Professor \u00c0ngel Lacalle",
+                "stopId": "525",
+                "routes": "72 - Estaci\u00f3 del Nord, 73 - Estaci\u00f3 del Nord",
+                "location": "C JOSE ANDREU ALABARTA 5 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.398543502176447,
+                    39.4547638965628
+                ]
+            },
+            "properties": {
+                "name": "Patraix",
+                "stopId": "2380",
+                "routes": "11 - Patraix",
+                "location": "C  13 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390987479928836,
+                    39.4473025313743
+                ]
+            },
+            "properties": {
+                "name": "Sant Marcel\u00b7l\u00ed",
+                "stopId": "1440",
+                "routes": "9 - Forn d'Alcedo, 10 - Sant Marcel.l\u00ed, 99 - la Malva-rosa",
+                "location": "C DOCTOR TOMAS SALA 10 (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390442658179663,
+                    39.4475788785565
+                ]
+            },
+            "properties": {
+                "name": "Doctor Tom\u00e1s Sala - Carters",
+                "stopId": "1443",
+                "routes": "9 - Estaci\u00f3 del Nord, 10 - Sant Marcel.l\u00ed, 18 - Hospital Dr. Peset, 99 - Palau de Congressos",
+                "location": "C DOCTOR TOMAS SALA 23 (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.39622330211013,
+                    39.4480624228113
+                ]
+            },
+            "properties": {
+                "name": "Cementeri",
+                "stopId": "564",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "PL SANTO DOMINGO DE GUZMAN S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393442554776399,
+                    39.4489424600791
+                ]
+            },
+            "properties": {
+                "name": "Doctor Tom\u00e1s Sala - Jer\u00f3nima Gal\u00e9s",
+                "stopId": "1444",
+                "routes": "9 - Estaci\u00f3 del Nord, 10 - Sant Marcel.l\u00ed, 18 - Hospital Dr. Peset, 99 - Palau de Congressos",
+                "location": "C DOCTOR TOMAS SALA S/N (CARRIL BUS) (IMPAR) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395269606612831,
+                    39.4492697892828
+                ]
+            },
+            "properties": {
+                "name": "Crematori Municipal",
+                "stopId": "563",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "AV GASPAR AGUILAR 159 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394685021853839,
+                    39.4493857489174
+                ]
+            },
+            "properties": {
+                "name": "Doctor Tom\u00e1s Sala - Gaspar Aguilar",
+                "stopId": "1438",
+                "routes": "9 - Forn d'Alcedo, 99 - la Malva-rosa",
+                "location": "C DOCTOR TOMAS SALA S/N (CARRIL BUS)(PAR) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395147913169883,
+                    39.4502602459084
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus - Gaspar Aguilar",
+                "stopId": "1905",
+                "routes": "99 - Palau de Congressos",
+                "location": "AV TRES CRUCES S/N (GASPAR AGUILAR) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394422012944261,
+                    39.4503143251349
+                ]
+            },
+            "properties": {
+                "name": "Gaspar Aguilar (imparell) - Doctor Tom\u00e1s Sala",
+                "stopId": "1930",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "AV GASPAR AGUILAR 131 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394011613548974,
+                    39.4503561671268
+                ]
+            },
+            "properties": {
+                "name": "Hospital Doctor Peset - Primer de Maig",
+                "stopId": "2320",
+                "routes": "18 - Hospital Dr. Peset",
+                "location": "AV  76 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394453077056507,
+                    39.4504464876239
+                ]
+            },
+            "properties": {
+                "name": "Gaspar Aguilar (parell) - Doctor Tom\u00e1s Sala",
+                "stopId": "1929",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV GASPAR AGUILAR 131 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393252431535864,
+                    39.4522423285867
+                ]
+            },
+            "properties": {
+                "name": "Hospital Doctor Peset",
+                "stopId": "1733",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV GASPAR AGUILAR 92 DUP - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.392933370858659,
+                    39.4525110916231
+                ]
+            },
+            "properties": {
+                "name": "Hospital Doctor Peset - M\u00fasic Penella",
+                "stopId": "1931",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "AV GASPAR AGUILAR 99 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391948226825849,
+                    39.4541496836758
+                ]
+            },
+            "properties": {
+                "name": "Gaspar Aguilar - Montesa",
+                "stopId": "1928",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV GASPAR AGUILAR 74 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391816677180751,
+                    39.4541706411161
+                ]
+            },
+            "properties": {
+                "name": "Gaspar Aguilar - Calvo Acacio",
+                "stopId": "571",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "AV GASPAR AGUILAR 73 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390663160439781,
+                    39.4558764323717
+                ]
+            },
+            "properties": {
+                "name": "Gaspar Aguilar - Costa i Borr\u00e0s",
+                "stopId": "1932",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "AV GASPAR AGUILAR 49 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396354819009054,
+                    39.4561317816778
+                ]
+            },
+            "properties": {
+                "name": "Campos Crespo - Fra Jun\u00edper Serra",
+                "stopId": "2381",
+                "routes": "11 - Els Orriols",
+                "location": "C CAMPOS CRESPO 36 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394100421443533,
+                    39.45815508433
+                ]
+            },
+            "properties": {
+                "name": "Pius XI - Xera",
+                "stopId": "2382",
+                "routes": "11 - Els Orriols",
+                "location": "C CAMPOS CRESPO 25 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396472836469272,
+                    39.4583507839421
+                ]
+            },
+            "properties": {
+                "name": "Humanista Mariner - Jos\u00e9 Roca Coll",
+                "stopId": "2384",
+                "routes": "11 - Patraix",
+                "location": "C HUMANISTA MARINER 39 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394543657083156,
+                    39.4598485445466
+                ]
+            },
+            "properties": {
+                "name": "Humanista Mariner - Fontanars",
+                "stopId": "2383",
+                "routes": "11 - Patraix",
+                "location": "C HUMANISTA MARINER 20 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.40058812333966,
+                    39.454838880472
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus - Mariano de Cavia",
+                "stopId": "2245",
+                "routes": "99 - la Malva-rosa",
+                "location": "AV TRES CRUCES S/N (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.40408669007894,
+                    39.4552551387097
+                ]
+            },
+            "properties": {
+                "name": "Arquitecte Segura de Lago - Professor \u00c0ngel Lacalle",
+                "stopId": "545",
+                "routes": "72 - Sant Isidre, 73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C ARQUITECTO SEGURA DE LAGO 6 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.39876545480583,
+                    39.4561467955567
+                ]
+            },
+            "properties": {
+                "name": "Canonge T\u00e0rrega - Campaners",
+                "stopId": "2385",
+                "routes": "11 - Patraix",
+                "location": "C  S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.401052558108094,
+                    39.4562637902177
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus - Bol\u00edvia",
+                "stopId": "1938",
+                "routes": "99 - Palau de Congressos",
+                "location": "AV TRES CRUCES 78 DAVANT (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.403904769326043,
+                    39.4565222222297
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed nou de Picanya - Arquitecte Segura de Lago",
+                "stopId": "1225",
+                "routes": "72 - Estaci\u00f3 del Nord, 73 - Estaci\u00f3 del Nord",
+                "location": "CAMI PICA\u00f1A (CNO. NUEVO) 19 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402122038043262,
+                    39.4573219886119
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus - Arxiduc Carles",
+                "stopId": "2244",
+                "routes": "99 - la Malva-rosa",
+                "location": "AV TRES CRUCES 54 (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.403235161649095,
+                    39.457540858792
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed nou de Picanya - Tres Creus",
+                "stopId": "540",
+                "routes": "72 - Sant Isidre, 73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "CAMI PICA\u00f1A (CNO. NUEVO) 2 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402776519236905,
+                    39.458628918607
+                ]
+            },
+            "properties": {
+                "name": "Tres Creus - Segona Rep\u00fablica Espanyola",
+                "stopId": "1175",
+                "routes": "99 - Palau de Congressos",
+                "location": "AV TRES CRUCES 103 (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.401408982089585,
+                    39.4588885193152
+                ]
+            },
+            "properties": {
+                "name": "Arxiduc Carles - M\u00fasic Gomis",
+                "stopId": "543",
+                "routes": "72 - Estaci\u00f3 del Nord, 73 - Estaci\u00f3 del Nord",
+                "location": "C ARCHIDUQUE CARLOS 133 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.398589538797159,
+                    39.4592915233256
+                ]
+            },
+            "properties": {
+                "name": "Jos\u00e9 Roca Coll - M\u00fasic Gomis",
+                "stopId": "2350",
+                "routes": "73 - Estaci\u00f3 del Nord",
+                "location": "C  S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.401056319612295,
+                    39.4594593449336
+                ]
+            },
+            "properties": {
+                "name": "Arxiduc Carles - Puebla de Valverde",
+                "stopId": "539",
+                "routes": "72 - Sant Isidre, 73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C ARCHIDUQUE CARLOS 82 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.39219124152948,
+                    39.459887907972
+                ]
+            },
+            "properties": {
+                "name": "Pius XI - Manuel Sim\u00f3",
+                "stopId": "552",
+                "routes": "11 - Els Orriols",
+                "location": "C PIO XI 3 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385088787182722,
+                    39.4279017907744
+                ]
+            },
+            "properties": {
+                "name": "Pa\u00eds Valenci\u00e0 - Col\u00f3n",
+                "stopId": "2337",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV PAIS VALENCI\u00c0 83 - SEDAV\u00cd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388965529312336,
+                    39.439941907893
+                ]
+            },
+            "properties": {
+                "name": "Josep Soto Mic\u00f3 - Alcal\u00e0 de Xivert",
+                "stopId": "580",
+                "routes": "9 - Forn d'Alcedo, 27 - la Torre",
+                "location": "C JOSE SOTO MICO 22 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388782271758717,
+                    39.4401277912381
+                ]
+            },
+            "properties": {
+                "name": "Josep Soto Mic\u00f3 - S\u00edndic Mojol\u00ed",
+                "stopId": "590",
+                "routes": "9 - Estaci\u00f3 del Nord, 27 - Mercat Central",
+                "location": "C JOSE SOTO MICO 41 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.387521338447521,
+                    39.4436089274537
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir (parell) - Arquebisbe Olaechea",
+                "stopId": "579",
+                "routes": "9 - Forn d'Alcedo, 27 - la Torre",
+                "location": "C SAN VICENTE MARTIR 438 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.387371569397763,
+                    39.4436638156739
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir (imparell) - Arquebisbe Olaechea",
+                "stopId": "591",
+                "routes": "9 - Estaci\u00f3 del Nord, 27 - Mercat Central",
+                "location": "C SAN VICENTE MARTIR 371 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386857917113188,
+                    39.4453136189824
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Enginer Josep Sirera",
+                "stopId": "578",
+                "routes": "27 - la Torre",
+                "location": "C SAN VICENTE MARTIR 412 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386450693371087,
+                    39.4462182060856
+                ]
+            },
+            "properties": {
+                "name": "Bulevard Sud - Pont",
+                "stopId": "1943",
+                "routes": "64 - Hospital La Fe",
+                "location": "AV  S/N (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.387000741081563,
+                    39.446388600583
+                ]
+            },
+            "properties": {
+                "name": "Doctor Tom\u00e1s Sala (parell) - Sant Vicent M\u00e0rtir",
+                "stopId": "1441",
+                "routes": "9 - Forn d'Alcedo, 18 - Universitats, 99 - la Malva-rosa",
+                "location": "C DOCTOR TOMAS SALA 43(DAVANT CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.387059104671858,
+                    39.4467900504714
+                ]
+            },
+            "properties": {
+                "name": "Doctor Tom\u00e1s Sala (imparell) - Sant Vicent M\u00e0rtir",
+                "stopId": "1442",
+                "routes": "9 - Estaci\u00f3 del Nord, 18 - Hospital Dr. Peset, 99 - Palau de Congressos",
+                "location": "C DOCTOR TOMAS SALA 43 (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385950664573578,
+                    39.4472888227986
+                ]
+            },
+            "properties": {
+                "name": "San Vicent M\u00e0rtir (imparell) - Creu Coberta",
+                "stopId": "592",
+                "routes": "27 - Mercat Central, 64 - Benicalap",
+                "location": "C SAN VICENTE MARTIR 315-317 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380919262735567,
+                    39.4263584046877
+                ]
+            },
+            "properties": {
+                "name": "Pa\u00eds Valenci\u00e0 - Salvador Giner",
+                "stopId": "2339",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "AV PAIS VALENCI\u00c0 47 (DAVANT) - SEDAV\u00cd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.38174396983226,
+                    39.4266008259838
+                ]
+            },
+            "properties": {
+                "name": "Pa\u00eds Valenci\u00e0 - Val\u00e8ncia",
+                "stopId": "2338",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV PAIS VALENCI\u00c0 49 - SEDAV\u00cd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384770111428925,
+                    39.4279662039217
+                ]
+            },
+            "properties": {
+                "name": "Pa\u00eds Valenci\u00e0 - Pintor Sorolla",
+                "stopId": "2340",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "AV PAIS VALENCI\u00c0 83 (DAVANT) - SEDAV\u00cd"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.381277922586765,
+                    39.4454327701521
+                ]
+            },
+            "properties": {
+                "name": "Bulevard Sud (parell) - Malilla",
+                "stopId": "1944",
+                "routes": "18 - Universitats, 64 - Hospital La Fe, 99 - la Malva-rosa",
+                "location": "AV  S/N (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380815594333126,
+                    39.44580602214
+                ]
+            },
+            "properties": {
+                "name": "Bulevard Sud (imparell) - Malilla",
+                "stopId": "1965",
+                "routes": "18 - Hospital Dr. Peset, 64 - Benicalap, 99 - Palau de Congressos",
+                "location": "AV  S/N (CARRIL BUS) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380014410373845,
+                    39.4467316234061
+                ]
+            },
+            "properties": {
+                "name": "Malilla (imparell) - Illa Formentera",
+                "stopId": "1463",
+                "routes": "8 - Porta de la Mar, 18 - Universitats",
+                "location": "CTRA MALILLA 89 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380094037551102,
+                    39.4470091864968
+                ]
+            },
+            "properties": {
+                "name": "Malilla (parell) - Illa Formentera",
+                "stopId": "612",
+                "routes": "8 - Hospital La Fe, 18 - Hospital Dr. Peset",
+                "location": "CTRA MALILLA 100 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389554517518503,
+                    39.4480813081248
+                ]
+            },
+            "properties": {
+                "name": "Carters (imparell) - Primer de Maig",
+                "stopId": "976",
+                "routes": "10 - Benimaclet",
+                "location": "C CARTEROS 77 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389623272783993,
+                    39.4481977443369
+                ]
+            },
+            "properties": {
+                "name": "Carters (parell) - Primer de Maig",
+                "stopId": "978",
+                "routes": "10 - Sant Marcel.l\u00ed, 18 - Universitats",
+                "location": "C CARTEROS 84 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385778745165216,
+                    39.4482378648504
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir (parell) - Creu Coberta",
+                "stopId": "577",
+                "routes": "27 - la Torre, 64 - Hospital La Fe",
+                "location": "C SAN VICENTE MARTIR 340 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385278929085996,
+                    39.4491463902909
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Altamira",
+                "stopId": "593",
+                "routes": "27 - Mercat Central, 64 - Benicalap",
+                "location": "C SAN VICENTE MARTIR 289 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389301047256017,
+                    39.4500762388329
+                ]
+            },
+            "properties": {
+                "name": "Carters - Calvo Acacio",
+                "stopId": "975",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "C CARTEROS 62 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389072136851498,
+                    39.4503027918
+                ]
+            },
+            "properties": {
+                "name": "Carters - Moss\u00e9n Febrer",
+                "stopId": "979",
+                "routes": "10 - Benimaclet",
+                "location": "C CARTEROS 60 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385065758036486,
+                    39.4509734148101
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Moss\u00e9n Febrer",
+                "stopId": "1349",
+                "routes": "27 - la Torre, 64 - Hospital La Fe",
+                "location": "C SAN VICENTE MARTIR 306 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384786460653266,
+                    39.4513367180313
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Fern\u00e1ndez de Mesa",
+                "stopId": "594",
+                "routes": "27 - Mercat Central, 64 - Benicalap",
+                "location": "C SAN VICENTE MARTIR 300 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388671414120117,
+                    39.4526768126033
+                ]
+            },
+            "properties": {
+                "name": "Carters - Llanera de Ranes",
+                "stopId": "974",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "C CARTEROS 38 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388528938617029,
+                    39.4528852435979
+                ]
+            },
+            "properties": {
+                "name": "Carters - Pla\u00e7a Santiago Su\u00e1rez",
+                "stopId": "1859",
+                "routes": "10 - Benimaclet",
+                "location": "C CARTEROS 38 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384697693796789,
+                    39.452791151367
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Joaqu\u00edn Navarro",
+                "stopId": "576",
+                "routes": "27 - la Torre, 64 - Hospital La Fe",
+                "location": "C SAN VICENTE MARTIR 278 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384458755400165,
+                    39.4529865903496
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Almudaina",
+                "stopId": "1350",
+                "routes": "27 - Mercat Central, 64 - Benicalap",
+                "location": "C SAN VICENTE MARTIR 267 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.38405670282583,
+                    39.4557917643846
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Dolores Alcaide",
+                "stopId": "575",
+                "routes": "27 - la Torre, 64 - Hospital La Fe",
+                "location": "C SAN VICENTE MARTIR 238 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383691732755841,
+                    39.4567420103047
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent M\u00e0rtir - Millars",
+                "stopId": "595",
+                "routes": "27 - Mercat Central, 64 - Benicalap",
+                "location": "C SAN VICENTE MARTIR 211 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383933788415887,
+                    39.4579973218313
+                ]
+            },
+            "properties": {
+                "name": "Giorgeta - Carretera d'Escriv\u00e0",
+                "stopId": "434",
+                "routes": "27 - la Torre",
+                "location": "AV GIORGETA JARD\u00cd - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384507066926268,
+                    39.4589677408399
+                ]
+            },
+            "properties": {
+                "name": "Jes\u00fas",
+                "stopId": "1696",
+                "routes": "64 - Hospital La Fe, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV GIORGETA 28 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384369401619155,
+                    39.4591732903541
+                ]
+            },
+            "properties": {
+                "name": "Jes\u00fas",
+                "stopId": "436",
                 "routes": "90 - Circular Ronda Tr\u00e0nsits",
-                "location": "AV PEREZ GALDOS 128 - VAL\u00c8NCIA"
+                "location": "AV GIORGETA 39 - VAL\u00c8NCIA"
             }
         },
         {
@@ -2982,15 +4230,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.396753858586019,
-                    39.4746477892431
+                    -0.386887035974326,
+                    39.4554768051803
                 ]
             },
             "properties": {
-                "name": "Petxina - P\u00e9rez Galdos",
-                "stopId": "1422",
-                "routes": "95 - Marina Real",
-                "location": "PSEG PECHINA 47 - VAL\u00c8NCIA"
+                "name": "Uruguai - Marqu\u00e9s de Bellet",
+                "stopId": "1860",
+                "routes": "10 - Benimaclet",
+                "location": "C URUGUAY 53 ACC - VAL\u00c8NCIA"
             }
         },
         {
@@ -2998,15 +4246,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.400259488352464,
-                    39.4734722400679
+                    -0.387053610609091,
+                    39.455643516613
                 ]
             },
             "properties": {
-                "name": "Democr\u00e0cia - Vel\u00e1zquez",
-                "stopId": "2305",
-                "routes": "73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
-                "location": "C CASTAN TOBE\u00d1AS 48 - VAL\u00c8NCIA"
+                "name": "Uruguai - Vene\u00e7uela",
+                "stopId": "1036",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "C URUGUAY 38 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3014,15 +4262,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.402715463836569,
-                    39.4735509863327
+                    -0.387952034259018,
+                    39.4566050635078
                 ]
             },
             "properties": {
-                "name": "Petxina - Rac\u00f3 d'Adem\u00fas",
-                "stopId": "472",
-                "routes": "73 - Estaci\u00f3 del Nord, 95 - Marina Real",
-                "location": "PSEG PECHINA 71 - VAL\u00c8NCIA"
+                "name": "Jaime Beltr\u00e1n - Misser Rabassa",
+                "stopId": "961",
+                "routes": "9 - Estaci\u00f3 del Nord",
+                "location": "C JAIME BELTRAN 13 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3030,15 +4278,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.399309640546605,
-                    39.4742104895589
+                    -0.390163118404421,
+                    39.4568517295063
                 ]
             },
             "properties": {
-                "name": "Petxina - Torres",
-                "stopId": "1421",
-                "routes": "95 - Marina Real",
-                "location": "PSEG PECHINA 53 - VAL\u00c8NCIA"
+                "name": "Gaspar Aguilar - Fontanars",
+                "stopId": "559",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV GASPAR AGUILAR 30 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3046,15 +4294,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.404308900215627,
-                    39.4749512766683
+                    -0.387011629111774,
+                    39.4570103371359
                 ]
             },
             "properties": {
-                "name": "Parc de Cap\u00e7alera",
-                "stopId": "2093",
-                "routes": "95 - Hospital General",
-                "location": "AV MANUEL DE FALLA 13 - VAL\u00c8NCIA"
+                "name": "Uruguai - Misser Rabassa",
+                "stopId": "972",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "C URUGUAY 18 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3062,15 +4310,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.401267448720165,
-                    39.4755503704322
+                    -0.386851407798493,
+                    39.4579861508934
                 ]
             },
             "properties": {
-                "name": "Manuel de Falla - Professor L\u00f3pez Ibor",
-                "stopId": "420",
-                "routes": "67 - Nou Campanar, 95 - Hospital General",
-                "location": "AV MANUEL DE FALLA S/N - VAL\u00c8NCIA"
+                "name": "Uruguai - Carretera d'Escriv\u00e0",
+                "stopId": "1547",
+                "routes": "9 - Estaci\u00f3 del Nord, 10 - Benimaclet",
+                "location": "C URUGUAY 27 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3078,15 +4326,15 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.403442277602653,
-                    39.4769056918218
+                    -0.386967793333915,
+                    39.4582662035108
                 ]
             },
             "properties": {
-                "name": "Hern\u00e1ndez L\u00e1zaro - Centre  Comercial",
-                "stopId": "1651",
-                "routes": "67 - Nou Campanar",
-                "location": "C  12 ACCS - VAL\u00c8NCIA"
+                "name": "Uruguai (parell) - Jeroni Muny\u00f3s",
+                "stopId": "1785",
+                "routes": "10 - Sant Marcel.l\u00ed",
+                "location": "C URUGUAY 8 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3094,15 +4342,207 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.405984910437421,
-                    39.4760708470733
+                    -0.388542165764614,
+                    39.4592625357306
                 ]
             },
             "properties": {
-                "name": "P\u00edo Baroja - Front Bioparc",
-                "stopId": "2096",
+                "name": "Gaspar Aguilar - Jes\u00fas",
+                "stopId": "557",
+                "routes": "9 - Forn d'Alcedo",
+                "location": "AV GASPAR AGUILAR 2 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386009199736976,
+                    39.4596986917606
+                ]
+            },
+            "properties": {
+                "name": "Uruguai (imparell) - Jeroni Muny\u00f3s",
+                "stopId": "1783",
+                "routes": "9 - Estaci\u00f3 del Nord, 10 - Benimaclet",
+                "location": "C URUGUAY 5 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.377759031472377,
+                    39.4803751061006
+                ]
+            },
+            "properties": {
+                "name": "Blanqueria - Pare d'\u00d2rfens",
+                "stopId": "1959",
+                "routes": "5 - Est. del Nord, 28 - Estaci\u00f3 del Nord, 95 - Marina Real",
+                "location": "C BLANQUERIAS 14 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.373986950005702,
+                    39.4808327324188
+                ]
+            },
+            "properties": {
+                "name": "Pont de Fusta",
+                "stopId": "341",
+                "routes": "6 - << XX >>, 16 - Vinalesa, 26 - Moncada-Alfara, 79 - Grans Vies, 94 - Campanar, 95 - Hospital General",
+                "location": "C CRONISTA RIVELLES 1 FGV - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.375359517041833,
+                    39.4816431979624
+                ]
+            },
+            "properties": {
+                "name": "Guadalaviar - Pont dels Serrans",
+                "stopId": "352",
+                "routes": "6 - Hospital la Fe, 16 - Poeta Querol, 26 - Poeta Querol, 80 - Grans Vies, 94 - Av. Fran\u00e7a",
+                "location": "C GUADALAVIAR 2 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.387708753023243,
+                    39.4802119166763
+                ]
+            },
+            "properties": {
+                "name": "Estaci\u00f3 d'autobusos",
+                "stopId": "346",
+                "routes": "79 - Grans Vies, 95 - Hospital General",
+                "location": "AV MENENDEZ PIDAL 14 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389747252466391,
+                    39.4826947768048
+                ]
+            },
+            "properties": {
+                "name": "Joaquim Ballester (imparell) - Ricardo Mic\u00f3",
+                "stopId": "361",
+                "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal",
+                "location": "C JOAQU\u00cdN BALLESTER JARD\u00cd - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389696170774287,
+                    39.4829902981451
+                ]
+            },
+            "properties": {
+                "name": "Joaquim Ballester (parell) - Ricardo Mic\u00f3",
+                "stopId": "358",
+                "routes": "98 - Av. del Cid",
+                "location": "C JOAQU\u00cdN BALLESTER DAVANT JARD\u00cd - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384928009427594,
+                    39.4830848807886
+                ]
+            },
+            "properties": {
+                "name": "Pare Ferris (imparell) - Gregori Gea",
+                "stopId": "1311",
+                "routes": "28 - Estaci\u00f3 del Nord, 94 - Av. Fran\u00e7a",
+                "location": "C PADRE FERRIS 21 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384808422314399,
+                    39.4831482509451
+                ]
+            },
+            "properties": {
+                "name": "Pare Ferris (parell) - Gregori Gea",
+                "stopId": "2319",
+                "routes": "28 - Ciutat Art. Faller",
+                "location": "C PADRE FERRIS 14 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393690045812477,
+                    39.480025810436
+                ]
+            },
+            "properties": {
+                "name": "Campanar - Joan Pau II",
+                "stopId": "367",
+                "routes": "89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR 102 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393252056738144,
+                    39.4806197429238
+                ]
+            },
+            "properties": {
+                "name": "Campanar - Pius XII",
+                "stopId": "370",
+                "routes": "90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR 27 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393545512562571,
+                    39.4809129058255
+                ]
+            },
+            "properties": {
+                "name": "Vall de la Ballestera - Campanar",
+                "stopId": "64",
                 "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal, 99 - Palau de Congressos",
-                "location": "AV  2ACC - VAL\u00c8NCIA"
+                "location": "C VALLE DE LA BALLESTERA 1 - VAL\u00c8NCIA"
             }
         },
         {
@@ -3110,15 +4550,3023 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -0.40638308721019,
-                    39.4762215087689
+                    -0.393666812125818,
+                    39.4811556391764
                 ]
             },
             "properties": {
-                "name": "P\u00edo Baroja - Bioparc",
-                "stopId": "1661",
+                "name": "Vall de la Ballestera - Pius XII",
+                "stopId": "833",
                 "routes": "98 - Av. del Cid, 99 - la Malva-rosa",
-                "location": "AV  S/N CARRIL BUS - VAL\u00c8NCIA"
+                "location": "C VALLE DE LA BALLESTERA 2ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393394950910117,
+                    39.4816932317956
+                ]
+            },
+            "properties": {
+                "name": "Pius XII - Bisbe Soler",
+                "stopId": "407",
+                "routes": "62 - Estaci\u00f3 del Nord, 63 - Estaci\u00f3 del Nord, 64 - Hospital La Fe, 92 - la Malva-rosa",
+                "location": "AV PIO XII 17 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391925534108419,
+                    39.4820019292801
+                ]
+            },
+            "properties": {
+                "name": "Joaquim Ballester - Campanar",
+                "stopId": "359",
+                "routes": "98 - Av. del Cid",
+                "location": "C JOAQU\u00cdN BALLESTER 45 (LA FE) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393377073840489,
+                    39.4823288209838
+                ]
+            },
+            "properties": {
+                "name": "Pius XII - Campanar",
+                "stopId": "372",
+                "routes": "62 - Benim\u00e0met/fira, 63 - Campus de Burjassot, 64 - Benicalap, 92 - Campanar, 99 - Palau de Congressos",
+                "location": "AV PIO XII 28 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394820390868177,
+                    39.4834788522092
+                ]
+            },
+            "properties": {
+                "name": "Pius XII (imparell) - Metro Campanar",
+                "stopId": "1741",
+                "routes": "62 - Estaci\u00f3 del Nord, 64 - Hospital La Fe, 92 - la Malva-rosa, 99 - la Malva-rosa",
+                "location": "AV PIO XII S/N (JARD\u00cd) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391894463157776,
+                    39.4838811765719
+                ]
+            },
+            "properties": {
+                "name": "Conselleria d'Educaci\u00f3",
+                "stopId": "1265",
+                "routes": "60 - Av. de l'Oest, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR CONSELLERIA - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391444060991851,
+                    39.4843632894301
+                ]
+            },
+            "properties": {
+                "name": "Avinguda Campanar - Centre de Salut",
+                "stopId": "1266",
+                "routes": "60 - Torrefiel, 90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR 21 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394693342660504,
+                    39.4843958929519
+                ]
+            },
+            "properties": {
+                "name": "Pius XII (parell) - Metro Campanar",
+                "stopId": "373",
+                "routes": "62 - Benim\u00e0met/fira, 64 - Benicalap, 92 - Campanar, 99 - Palau de Congressos",
+                "location": "AV PIO XII 34 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396020460294113,
+                    39.4850218238982
+                ]
+            },
+            "properties": {
+                "name": "Campanar - Monestir de Poblet",
+                "stopId": "1272",
+                "routes": "62 - Estaci\u00f3 del Nord, 64 - Hospital La Fe, 92 - la Malva-rosa, 99 - la Malva-rosa",
+                "location": "AV PIO XII 51 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383003674166583,
+                    39.4801017484159
+                ]
+            },
+            "properties": {
+                "name": "IVAM",
+                "stopId": "796",
+                "routes": "5 - T. Serrans",
+                "location": "C GUILLEM DE CASTRO IVAM - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.381013247607683,
+                    39.4811031166218
+                ]
+            },
+            "properties": {
+                "name": "Guillem de Castro - Na Jordana",
+                "stopId": "1305",
+                "routes": "5 - T. Serrans, 28 - Estaci\u00f3 del Nord, 95 - Marina Real",
+                "location": "C GUILLEM DE CASTRO 160 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384302725663654,
+                    39.4814951366971
+                ]
+            },
+            "properties": {
+                "name": "Men\u00e9ndez Pidal (imparell) - Pare Ferris",
+                "stopId": "349",
+                "routes": "80 - Grans Vies",
+                "location": "AV MENENDEZ PIDAL 1 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384547373343142,
+                    39.4816190077027
+                ]
+            },
+            "properties": {
+                "name": "Men\u00e9ndez Pidal (parell) - Pare Ferris",
+                "stopId": "345",
+                "routes": "79 - Grans Vies, 95 - Hospital General",
+                "location": "AV MENENDEZ PIDAL 2 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.381480690571178,
+                    39.482661488316
+                ]
+            },
+            "properties": {
+                "name": "Escola Oficial d'Idiomes (riu)",
+                "stopId": "350",
+                "routes": "80 - Grans Vies, 94 - Av. Fran\u00e7a",
+                "location": "C LLANO DE LA ZAIDIA 18 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379532035705368,
+                    39.4828192232705
+                ]
+            },
+            "properties": {
+                "name": "El Pla de la Sa\u00efdia (riu) - Constituci\u00f3",
+                "stopId": "351",
+                "routes": "80 - Grans Vies, 94 - Av. Fran\u00e7a",
+                "location": "C LLANO DE LA ZAIDIA 13 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.381185861894471,
+                    39.4829023268775
+                ]
+            },
+            "properties": {
+                "name": "Escola Oficial d'Idiomes",
+                "stopId": "344",
+                "routes": "79 - Grans Vies, 94 - Campanar, 95 - Hospital General",
+                "location": "C LLANO DE LA ZAIDIA 18 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.378839957149983,
+                    39.4830881385493
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Pla de la Sa\u00efdia",
+                "stopId": "329",
+                "routes": "6 - Hospital la Fe, 16 - Poeta Querol, 26 - Poeta Querol",
+                "location": "AV CONSTITUCION ILLETA SA\u00cfDIA - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.38324712843883,
+                    39.4837226384006
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - M\u00e0laga",
+                "stopId": "330",
+                "routes": "94 - Campanar",
+                "location": "AV BURJASOT 26 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37542375920859,
+                    39.4818695881202
+                ]
+            },
+            "properties": {
+                "name": "Guadalaviar - Sagunt",
+                "stopId": "342",
+                "routes": "79 - Grans Vies, 94 - Campanar, 95 - Hospital General",
+                "location": "C GUADALAVIAR 2 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.377446931974367,
+                    39.4828328596147
+                ]
+            },
+            "properties": {
+                "name": "El Pla de la Sa\u00efdia - Constituci\u00f3",
+                "stopId": "343",
+                "routes": "79 - Grans Vies, 94 - Campanar, 95 - Hospital General",
+                "location": "C LLANO DE LA ZAIDIA 2 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37262144705829,
+                    39.483109519559
+                ]
+            },
+            "properties": {
+                "name": "Almassora - Pintor Vilar",
+                "stopId": "2234",
+                "routes": "11 - Patraix",
+                "location": "C ALMAZORA 16ACC (DAV) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37474075654858,
+                    39.4843760423183
+                ]
+            },
+            "properties": {
+                "name": "Sagunt - Sant Guillem",
+                "stopId": "321",
+                "routes": "6 - << XX >>, 16 - Vinalesa, 26 - Moncada-Alfara",
+                "location": "C SAGUNTO 58 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.3729162297634,
+                    39.4853042053634
+                ]
+            },
+            "properties": {
+                "name": "Argenter Su\u00e1rez - Miraculosa",
+                "stopId": "1816",
+                "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal",
+                "location": "C  11 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.376461207736583,
+                    39.4853616012643
+                ]
+            },
+            "properties": {
+                "name": "Ruaya (imparell) - Visitaci\u00f3",
+                "stopId": "1815",
+                "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal",
+                "location": "C  23 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.372977763332084,
+                    39.4854159326123
+                ]
+            },
+            "properties": {
+                "name": "Argenter Su\u00e1rez - Ministre Llu\u00eds Maians",
+                "stopId": "1807",
+                "routes": "98 - Av. del Cid",
+                "location": "C  16 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.377130570199393,
+                    39.485541792407
+                ]
+            },
+            "properties": {
+                "name": "Ruaya (parell) - Visitaci\u00f3",
+                "stopId": "1808",
+                "routes": "98 - Av. del Cid",
+                "location": "C  42 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.374656100199403,
+                    39.4862298114925
+                ]
+            },
+            "properties": {
+                "name": "Sagunt - Fra Pere Vives",
+                "stopId": "322",
+                "routes": "6 - << XX >>, 16 - Vinalesa, 26 - Moncada-Alfara",
+                "location": "C SAGUNTO 110 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386569236125987,
+                    39.4846305139617
+                ]
+            },
+            "properties": {
+                "name": "Joaquim Ballester - Pare Ferris",
+                "stopId": "1584",
+                "routes": "98 - Av. del Cid",
+                "location": "C JOAQU\u00cdN BALLESTER 8 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385408575364758,
+                    39.4848743773057
+                ]
+            },
+            "properties": {
+                "name": "Joaquim Ballester (imparell) - Pare Ferris",
+                "stopId": "1812",
+                "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal",
+                "location": "C JOAQU\u00cdN BALLESTER 3 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386399006861196,
+                    39.4848981472299
+                ]
+            },
+            "properties": {
+                "name": "Pare Ferris - Joaquim Ballester",
+                "stopId": "354",
+                "routes": "28 - Estaci\u00f3 del Nord, 94 - Av. Fran\u00e7a",
+                "location": "C PADRE FERRIS 41 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.385629896806072,
+                    39.4854851644539
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - Centre Cultural Bombas Gens",
+                "stopId": "331",
+                "routes": "28 - Ciutat Art. Faller, 94 - Campanar",
+                "location": "AV BURJASOT 56 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386813485124533,
+                    39.4863700195112
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - Marxalenes",
+                "stopId": "2160",
+                "routes": "28 - Ciutat Art. Faller, 94 - Campanar",
+                "location": "AV BURJASOT S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388747274538383,
+                    39.4873900059773
+                ]
+            },
+            "properties": {
+                "name": "Doctor Nicasi Benlloch - Alcubles",
+                "stopId": "353",
+                "routes": "28 - Estaci\u00f3 del Nord, 94 - Av. Fran\u00e7a",
+                "location": "C DOCTOR NICASIO BENLLOCH 3 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389613411406714,
+                    39.4881967037212
+                ]
+            },
+            "properties": {
+                "name": "Campanar - Doctor Nicasi Benlloch",
+                "stopId": "319",
+                "routes": "60 - Torrefiel, 90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR 1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.389068909104045,
+                    39.4883347008232
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - Doctor Peset Aleixandre",
+                "stopId": "333",
+                "routes": "28 - Ciutat Art. Faller, 94 - Campanar",
+                "location": "AV BURJASOT 114 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388570298824024,
+                    39.4889328507802
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Avinguda de Burjassot",
+                "stopId": "1684",
+                "routes": "60 - Av. de l'Oest, 64 - Hospital La Fe, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 138 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.387211404582398,
+                    39.4890217504282
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre (imparell) - Metro Tr\u00e0nsits",
+                "stopId": "1693",
+                "routes": "60 - Torrefiel, 64 - Benicalap, 90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 133 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.378759338394848,
+                    39.4852254916721
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - M\u00e0laga",
+                "stopId": "328",
+                "routes": "6 - Hospital la Fe, 16 - Poeta Querol, 26 - Poeta Querol",
+                "location": "AV CONSTITUCION 27 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379462406922626,
+                    39.4855672128774
+                ]
+            },
+            "properties": {
+                "name": "Reus - Poeta Fern\u00e1ndez Heredia",
+                "stopId": "1814",
+                "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal",
+                "location": "C  32 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379929962423602,
+                    39.4857115919014
+                ]
+            },
+            "properties": {
+                "name": "Metro Reus - Poeta Fern\u00e1ndez Heredia",
+                "stopId": "1809",
+                "routes": "98 - Av. del Cid",
+                "location": "C  31 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382890442853708,
+                    39.4857536097254
+                ]
+            },
+            "properties": {
+                "name": "Metro Reus - Alqueria de l'Estrella",
+                "stopId": "1813",
+                "routes": "98 - Passeig Mar\u00edtim / Estaci\u00f3 del Cabanyal",
+                "location": "C  20 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383548805060156,
+                    39.4857947111294
+                ]
+            },
+            "properties": {
+                "name": "Reus - Periodista Llorente",
+                "stopId": "1810",
+                "routes": "98 - Av. del Cid",
+                "location": "C  16 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382790183816851,
+                    39.4900307629516
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Guardacostes",
+                "stopId": "242",
+                "routes": "60 - Torrefiel, 64 - Benicalap, 90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 105 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382982678243955,
+                    39.4901787356997
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Joan XXIII",
+                "stopId": "238",
+                "routes": "60 - Av. de l'Oest, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 94 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382356423436721,
+                    39.4905400825471
+                ]
+            },
+            "properties": {
+                "name": "Joan XXIII (imparell) - F\u00e9lix del R\u00edo",
+                "stopId": "1826",
+                "routes": "64 - Hospital La Fe",
+                "location": "AV JUAN XXIII 3 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.377456603368521,
+                    39.4872755159194
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Sarri\u00f3n",
+                "stopId": "327",
+                "routes": "6 - Hospital la Fe, 16 - Poeta Querol, 26 - Poeta Querol",
+                "location": "AV CONSTITUCION 39 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.375011974208727,
+                    39.488986649102
+                ]
+            },
+            "properties": {
+                "name": "Sagunt - Pare Urb\u00e0",
+                "stopId": "323",
+                "routes": "6 - << XX >>, 16 - Vinalesa, 26 - Moncada-Alfara",
+                "location": "C SAGUNTO 168 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.375997607341844,
+                    39.4893127367104
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Xest",
+                "stopId": "326",
+                "routes": "6 - Hospital la Fe, 16 - Poeta Querol, 26 - Poeta Querol",
+                "location": "AV CONSTITUCION 85 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.374452701527751,
+                    39.4915297427444
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Doctor Peset Aleixandre",
+                "stopId": "325",
+                "routes": "6 - Hospital la Fe, 16 - Poeta Querol, 26 - Poeta Querol",
+                "location": "AV CONSTITUCION 127 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.373954328449413,
+                    39.4915759202562
+                ]
+            },
+            "properties": {
+                "name": "Sagunt - Don Bosco",
+                "stopId": "324",
+                "routes": "6 - << XX >>, 16 - Vinalesa, 26 - Moncada-Alfara",
+                "location": "C SAGUNTO 192 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.376153143301324,
+                    39.4916779458968
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Felip Rinaldi",
+                "stopId": "1217",
+                "routes": "26 - Moncada-Alfara, 60 - Av. de l'Oest, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 24 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.374810429019898,
+                    39.4917655795258
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Constituci\u00f3",
+                "stopId": "244",
+                "routes": "90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 5 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.373387457879584,
+                    39.4918565228641
+                ]
+            },
+            "properties": {
+                "name": "Primat Reig - Constituci\u00f3",
+                "stopId": "1682",
+                "routes": "89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV PRIMADO REIG 5 (ACC.) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.375574614810981,
+                    39.4922035226058
+                ]
+            },
+            "properties": {
+                "name": "Comte de Torrefiel - Escultor Piquer",
+                "stopId": "1199",
+                "routes": "6 - << XX >>",
+                "location": "C CONDE DE TORREFIEL 6 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.3770885570689,
+                    39.4925156270022
+                ]
+            },
+            "properties": {
+                "name": "Pere Patrici Mey - Felip Rinaldi",
+                "stopId": "1130",
+                "routes": "60 - Torrefiel",
+                "location": "C PEDRO IMPRESOR PATRICIO MEY 29 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.378897816665623,
+                    39.4908821804403
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Cam\u00ed de Moncada",
+                "stopId": "243",
+                "routes": "90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 71 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379074185839656,
+                    39.4910279062528
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre - Moncada",
+                "stopId": "1683",
+                "routes": "60 - Av. de l'Oest, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 60 (ACC.) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382275392250746,
+                    39.4911243446449
+                ]
+            },
+            "properties": {
+                "name": "Joan XXIII (parell) - F\u00e9lix del R\u00edo",
+                "stopId": "268",
+                "routes": "60 - Torrefiel, 64 - Benicalap",
+                "location": "AV JUAN XXIII 10 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.378576434401455,
+                    39.4914665388124
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Doctor Peset Aleixandre",
+                "stopId": "279",
+                "routes": "26 - Moncada-Alfara",
+                "location": "CAMI MONCADA 50 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379033531689213,
+                    39.491804333908
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - F\u00e9lix del R\u00edo",
+                "stopId": "306",
+                "routes": "26 - Poeta Querol",
+                "location": "CAMI MONCADA 61 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379714166807301,
+                    39.4919572319221
+                ]
+            },
+            "properties": {
+                "name": "F\u00e9lix del R\u00edo - Cam\u00ed de Moncada",
+                "stopId": "2301",
+                "routes": "60 - Torrefiel",
+                "location": "C DOCTOR MARCO MERENCIANO 1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383133314170186,
+                    39.492645059096
+                ]
+            },
+            "properties": {
+                "name": "Joan XXIII - Periodista Gil Sumbiela",
+                "stopId": "445",
+                "routes": "64 - Hospital La Fe",
+                "location": "AV JUAN XXIII 29 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383582631243469,
+                    39.4931783196025
+                ]
+            },
+            "properties": {
+                "name": "Castellonet - Joan XXIII",
+                "stopId": "1847",
+                "routes": "12 - Ciutat Fallera, 64 - Benicalap",
+                "location": "C  1 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.381563847333311,
+                    39.4936201508334
+                ]
+            },
+            "properties": {
+                "name": "Pere Cabanes - Cam\u00ed Moncada",
+                "stopId": "1846",
+                "routes": "12 - Ciutat Fallera",
+                "location": "C PEDRO CABANES 104 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37878291980358,
+                    39.4942418992021
+                ]
+            },
+            "properties": {
+                "name": "Pere Cabanes - Bisbe Laguarda",
+                "stopId": "1062",
+                "routes": "12 - Ciutat Fallera",
+                "location": "C PEDRO CABANES 88 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.374122832231754,
+                    39.4925823276264
+                ]
+            },
+            "properties": {
+                "name": "Sant Dom\u00e9nec Savio - Constituci\u00f3",
+                "stopId": "273",
+                "routes": "6 - Hospital la Fe, 60 - Av. de l'Oest",
+                "location": "C SANTO DOMINGO SAVIO 5 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.375937054687836,
+                    39.4932532920652
+                ]
+            },
+            "properties": {
+                "name": "Comte de Torrefiel - Mestre Mar\u00e7al",
+                "stopId": "1125",
+                "routes": "6 - << XX >>, 60 - Torrefiel",
+                "location": "C CONDE DE TORREFIEL 28 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.373158527091306,
+                    39.493271065931
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Reig Genov\u00e9s",
+                "stopId": "1861",
+                "routes": "16 - Vinalesa",
+                "location": "AV CONSTITUCION 182 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37336577915056,
+                    39.4932863004779
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Coronel Montesinos",
+                "stopId": "1862",
+                "routes": "16 - Poeta Querol",
+                "location": "AV CONSTITUCION 180 AC (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.374504219952758,
+                    39.493495148073
+                ]
+            },
+            "properties": {
+                "name": "Sant Dom\u00e9nec Savio - Mestre Mar\u00e7al",
+                "stopId": "272",
+                "routes": "6 - Hospital la Fe, 60 - Av. de l'Oest",
+                "location": "C SANTO DOMINGO SAVIO 13 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.372614965718033,
+                    39.4947096429424
+                ]
+            },
+            "properties": {
+                "name": "Centre de Salut Salvador Allende",
+                "stopId": "1151",
+                "routes": "16 - Poeta Querol",
+                "location": "C CONDE DE LUMIARES 4 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.375328631516903,
+                    39.494984980555
+                ]
+            },
+            "properties": {
+                "name": "Pere Cabanes - Sant Dom\u00e9nec Savio",
+                "stopId": "1061",
+                "routes": "12 - Ciutat Fallera",
+                "location": "C PEDRO CABANES 58 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.372785306001156,
+                    39.495423208267
+                ]
+            },
+            "properties": {
+                "name": "Pere Cabanes - Mont Carmel",
+                "stopId": "1060",
+                "routes": "12 - Ciutat Fallera",
+                "location": "C PEDRO CABANES 10 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.376812275679414,
+                    39.495825823985
+                ]
+            },
+            "properties": {
+                "name": "Comte de Torrefiel - Josep Esteve",
+                "stopId": "1126",
+                "routes": "6 - << XX >>, 60 - Torrefiel",
+                "location": "C CONDE DE TORREFIEL 74 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380199024576369,
+                    39.494654424829
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada (parell) - Cambrils",
+                "stopId": "280",
+                "routes": "26 - Moncada-Alfara",
+                "location": "CAMI MONCADA 92 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380465245721554,
+                    39.4948853682163
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada (imparell) - Cambrils",
+                "stopId": "305",
+                "routes": "26 - Poeta Querol",
+                "location": "CAMI MONCADA 96 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.38409753142882,
+                    39.4950216633008
+                ]
+            },
+            "properties": {
+                "name": "Joan XXIII - Federico Alc\u00e1cer Aguilar",
+                "stopId": "1825",
+                "routes": "64 - Hospital La Fe",
+                "location": "AV JUAN XXIII 45 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384275443790221,
+                    39.4952080332927
+                ]
+            },
+            "properties": {
+                "name": "Federico Alc\u00e1cer Aguilar - Joan XXIII",
+                "stopId": "1836",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "C  1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382198588322487,
+                    39.4956569862382
+                ]
+            },
+            "properties": {
+                "name": "Riu Nervi\u00f3n - Riu Segre",
+                "stopId": "1837",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "C  11 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.379854855000045,
+                    39.4959413283266
+                ]
+            },
+            "properties": {
+                "name": "Pintor Jacomart - Alcany\u00eds",
+                "stopId": "1280",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "C PINTOR JACOMART 57 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.380923698546985,
+                    39.4964490282443
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada (parell) - Alemany",
+                "stopId": "281",
+                "routes": "26 - Moncada-Alfara",
+                "location": "CAMI MONCADA 121 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.381201075566843,
+                    39.4965693369865
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada (imparell) - Alemany",
+                "stopId": "304",
+                "routes": "26 - Poeta Querol",
+                "location": "CAMI MONCADA 123 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384781899210602,
+                    39.4969113663557
+                ]
+            },
+            "properties": {
+                "name": "Benicalap - Joan XXIII",
+                "stopId": "1824",
+                "routes": "64 - Hospital La Fe",
+                "location": "AV JUAN XXIII 51 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382694101650483,
+                    39.5027200389411
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Carretera Carpesa",
+                "stopId": "303",
+                "routes": "26 - Poeta Querol",
+                "location": "CAMI MONCADA 181 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386764470535596,
+                    39.4893416647766
+                ]
+            },
+            "properties": {
+                "name": "Doctor Peset Aleixandre (parell) - Metro Tr\u00e0nsits",
+                "stopId": "958",
+                "routes": "60 - Av. de l'Oest, 64 - Hospital La Fe, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV DOCTOR PESET ALEIXANDRE 124 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390290573718958,
+                    39.4894889827749
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - Mond\u00faver",
+                "stopId": "307",
+                "routes": "28 - Ciutat Art. Faller",
+                "location": "AV BURJASOT 130 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.38607511586315,
+                    39.4926419609677
+                ]
+            },
+            "properties": {
+                "name": "Castellonet - Alfara del Patriarca",
+                "stopId": "1848",
+                "routes": "12 - Ciutat Fallera, 64 - Benicalap",
+                "location": "C  19 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388127157646692,
+                    39.4932292152373
+                ]
+            },
+            "properties": {
+                "name": "Equador - General Llorens",
+                "stopId": "1849",
+                "routes": "12 - Ciutat Fallera, 64 - Benicalap",
+                "location": "AV ECUADOR  EL 34 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388309516510807,
+                    39.4935940733208
+                ]
+            },
+            "properties": {
+                "name": "Poeta Serrano Clavero - Equador",
+                "stopId": "1834",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "C  43 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.386254261715849,
+                    39.4949828678442
+                ]
+            },
+            "properties": {
+                "name": "Federico Alc\u00e1cer Aguilar - Poeta Serrano Clavero",
+                "stopId": "1835",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "C  26 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.388619799435242,
+                    39.4957978909691
+                ]
+            },
+            "properties": {
+                "name": "Llevant UE - Federico Alc\u00e1cer Aguilar",
+                "stopId": "2389",
+                "routes": "64 - Benicalap",
+                "location": "AV  20 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37550518252488,
+                    39.4960892991115
+                ]
+            },
+            "properties": {
+                "name": "Sant Dom\u00e9nec Savio - Josep Esteve",
+                "stopId": "1129",
+                "routes": "6 - Hospital la Fe, 60 - Av. de l'Oest",
+                "location": "C SANTO DOMINGO SAVIO 51 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.377254841134174,
+                    39.4964676445607
+                ]
+            },
+            "properties": {
+                "name": "Pintor Jacomart - Comte de Torrefiel",
+                "stopId": "1131",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "C PINTOR JACOMART 29 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.374416832972509,
+                    39.4970387402291
+                ]
+            },
+            "properties": {
+                "name": "M\u00fasic Esp\u00ed - Gravador Fabregat",
+                "stopId": "1132",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "PL MUSICO ESPI 1 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.376233981458268,
+                    39.4979393936278
+                ]
+            },
+            "properties": {
+                "name": "Mercat de Torrefiel",
+                "stopId": "1128",
+                "routes": "6 - Hospital la Fe, 60 - Av. de l'Oest",
+                "location": "C SANTO DOMINGO SAVIO 94 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.37734728859032,
+                    39.4980540792449
+                ]
+            },
+            "properties": {
+                "name": "Comte de Torrefiel - Riu Bidasoa",
+                "stopId": "1127",
+                "routes": "6 - << XX >>, 12 - Pl. Am\u00e8rica, 60 - Torrefiel",
+                "location": "C CONDE DE TORREFIEL 114 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.377246388332131,
+                    39.4985654611132
+                ]
+            },
+            "properties": {
+                "name": "Torrefiel",
+                "stopId": "2085",
+                "routes": "6 - Hospital la Fe, 60 - Av. de l'Oest",
+                "location": "C CECILIO PLA 4 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.403873239785568,
+                    39.4810942022707
+                ]
+            },
+            "properties": {
+                "name": "Terrateig - Poeta Rafael Alberti",
+                "stopId": "2069",
+                "routes": "67 - Estaci\u00f3 del Nord",
+                "location": "C  1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.403739709311028,
+                    39.4811741812213
+                ]
+            },
+            "properties": {
+                "name": "Terrateig - Jorge Com\u00edn",
+                "stopId": "2064",
+                "routes": "67 - Nou Campanar",
+                "location": "C  2-B - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.40220967310863,
+                    39.4837008018153
+                ]
+            },
+            "properties": {
+                "name": "Mestre Rodrigo (imparell) - General Avil\u00e9s",
+                "stopId": "1660",
+                "routes": "67 - Estaci\u00f3 del Nord",
+                "location": "AV MAESTRO RODRIGO 85 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.401860537857927,
+                    39.4837667692925
+                ]
+            },
+            "properties": {
+                "name": "Mestre Rodrigo - General Avil\u00e9s",
+                "stopId": "1653",
+                "routes": "67 - Nou Campanar",
+                "location": "AV MAESTRO RODRIGO 40 (ACC\u00c9S) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.404582635190846,
+                    39.4869640200569
+                ]
+            },
+            "properties": {
+                "name": "Mestre Rodrigo (imparell) - La Safor",
+                "stopId": "1659",
+                "routes": "67 - Estaci\u00f3 del Nord",
+                "location": "AV MAESTRO RODRIGO 109 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.397341122523755,
+                    39.4869704743225
+                ]
+            },
+            "properties": {
+                "name": "Corts Valencianes - Escoles Professionals Sant Josep",
+                "stopId": "405",
+                "routes": "62 - Estaci\u00f3 del Nord, 99 - la Malva-rosa",
+                "location": "AV CORTS VALENCIANES 1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.404325124625418,
+                    39.4870674278761
+                ]
+            },
+            "properties": {
+                "name": "Mestre Rodrigo - La Safor",
+                "stopId": "1654",
+                "routes": "67 - Nou Campanar",
+                "location": "AV MAESTRO RODRIGO 109 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.40442804954192,
+                    39.488281628745
+                ]
+            },
+            "properties": {
+                "name": "La Safor - Mestre Rodrigo",
+                "stopId": "1658",
+                "routes": "67 - Estaci\u00f3 del Nord",
+                "location": "C LA SAFOR. 20 (ACC\u00c9S) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.405779639420174,
+                    39.4890674228057
+                ]
+            },
+            "properties": {
+                "name": "Mestre Rodrigo - La Plana Baixa",
+                "stopId": "1655",
+                "routes": "67 - Nou Campanar",
+                "location": "AV MAESTRO RODRIGO 82-A - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.404302154264989,
+                    39.4900997497697
+                ]
+            },
+            "properties": {
+                "name": "Nou Campanar - Hospital Arnau de Vilanova",
+                "stopId": "1657",
+                "routes": "67 - Estaci\u00f3 del Nord",
+                "location": "C  BGW 11 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395912205911223,
+                    39.4855336059383
+                ]
+            },
+            "properties": {
+                "name": "Campanar - General Avil\u00e9s (illeta)",
+                "stopId": "2307",
+                "routes": "94 - Av. Fran\u00e7a",
+                "location": "AV PIO XII S/N (ILLETA) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390687983708808,
+                    39.485891749838
+                ]
+            },
+            "properties": {
+                "name": "Campanar - Ricardo Mic\u00f3",
+                "stopId": "364",
+                "routes": "60 - Torrefiel, 90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR 19 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390919113109783,
+                    39.4859173513956
+                ]
+            },
+            "properties": {
+                "name": "Campanar - Conchita Piquer",
+                "stopId": "1685",
+                "routes": "60 - Av. de l'Oest, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV CAMPANAR 28 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394964588790961,
+                    39.4861518860074
+                ]
+            },
+            "properties": {
+                "name": "General Avil\u00e9s - Pius XII",
+                "stopId": "1827",
+                "routes": "64 - Benicalap",
+                "location": "AV GENERAL AVILES 37 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396402493483371,
+                    39.4867536563002
+                ]
+            },
+            "properties": {
+                "name": "Corts Valencianes - Davant Escoles Professionals Sant Josep",
+                "stopId": "375",
+                "routes": "62 - Benim\u00e0met/fira, 99 - Palau de Congressos",
+                "location": "AV CORTS VALENCIANES 6 (ACC\u00c9S) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393924852119423,
+                    39.4869233317774
+                ]
+            },
+            "properties": {
+                "name": "General Avil\u00e9s - Miguel Servet (parell)",
+                "stopId": "1184",
+                "routes": "64 - Hospital La Fe, 94 - Campanar",
+                "location": "AV GENERAL AVILES 28 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.392637862048708,
+                    39.4871834086904
+                ]
+            },
+            "properties": {
+                "name": "General Avil\u00e9s - Miguel Servet (imparell)",
+                "stopId": "1828",
+                "routes": "64 - Benicalap, 94 - Av. Fran\u00e7a",
+                "location": "AV GENERAL AVILES 17 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390596836827049,
+                    39.4880194996519
+                ]
+            },
+            "properties": {
+                "name": "General Avil\u00e9s - Conchita Piquer",
+                "stopId": "1829",
+                "routes": "64 - Benicalap, 94 - Av. Fran\u00e7a",
+                "location": "AV GENERAL AVILES 1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.391119646556824,
+                    39.4881164216225
+                ]
+            },
+            "properties": {
+                "name": "General Avil\u00e9s - Doctor Nicasi Benlloch",
+                "stopId": "1183",
+                "routes": "64 - Hospital La Fe, 94 - Campanar",
+                "location": "AV GENERAL AVILES 10 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.39208349968908,
+                    39.4888948758027
+                ]
+            },
+            "properties": {
+                "name": "Doctor Nicasi Benlloch - Emili Nadal",
+                "stopId": "1348",
+                "routes": "28 - Estaci\u00f3 del Nord",
+                "location": "C DOCTOR NICASIO BENLLOCH 27 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.416053209434069,
+                    39.4971353472995
+                ]
+            },
+            "properties": {
+                "name": "Moss\u00e9n Miguel Tar\u00edn (imparell) - Carretera de Paterna",
+                "stopId": "381",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C PARROCO MIGUEL TARIN 49 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.416241604711788,
+                    39.4976400937663
+                ]
+            },
+            "properties": {
+                "name": "Moss\u00e9n Miguel Tar\u00edn (parell) - Carretera de Paterna",
+                "stopId": "400",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C PARROCO MIGUEL TARIN 38 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.416386343998152,
+                    39.4985297979486
+                ]
+            },
+            "properties": {
+                "name": "Moss\u00e9n Miguel Tar\u00edn (parell) - Miquel Agra\u00eft",
+                "stopId": "399",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C PARROCO MIGUEL TARIN 16 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.416331786424741,
+                    39.4985508512219
+                ]
+            },
+            "properties": {
+                "name": "Moss\u00e9n Miguel Tar\u00edn (imparell) - Miquel Agra\u00eft",
+                "stopId": "382",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C PARROCO MIGUEL TARIN 25 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.392439424346761,
+                    39.490421248775
+                ]
+            },
+            "properties": {
+                "name": "Bon Rec\u00e9s - Florista",
+                "stopId": "1333",
+                "routes": "28 - Estaci\u00f3 del Nord",
+                "location": "C BUEN RETIRO CANT\u00d3 FLORISTA - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393869541537676,
+                    39.4918914275393
+                ]
+            },
+            "properties": {
+                "name": "Florista - Metro Garb\u00ed",
+                "stopId": "1332",
+                "routes": "28 - Estaci\u00f3 del Nord",
+                "location": "C FLORISTA 63 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393309733486137,
+                    39.4923934413606
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - Pintor Matarana",
+                "stopId": "308",
+                "routes": "28 - Ciutat Art. Faller",
+                "location": "AV BURJASOT 186 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395935236346456,
+                    39.4938258625061
+                ]
+            },
+            "properties": {
+                "name": "Florista - Carrasqueta",
+                "stopId": "1331",
+                "routes": "28 - Estaci\u00f3 del Nord",
+                "location": "C FLORISTA 113 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.39077154363888,
+                    39.4940671148274
+                ]
+            },
+            "properties": {
+                "name": "Equador (imparell) - Centre de Salut Assutzena",
+                "stopId": "1833",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "AV ECUADOR  EL S/N (JUNT.C/VERBENA) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.390695770718603,
+                    39.4941557331068
+                ]
+            },
+            "properties": {
+                "name": "Equador (parell) - Centre de Salut Assutzena",
+                "stopId": "1850",
+                "routes": "12 - Ciutat Fallera, 64 - Benicalap",
+                "location": "AV ECUADOR  EL 69 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395602625008267,
+                    39.4945797161941
+                ]
+            },
+            "properties": {
+                "name": "Burjassot - Salvador Tuset",
+                "stopId": "309",
+                "routes": "28 - Ciutat Art. Faller",
+                "location": "AV BURJASOT 230 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.400013829647396,
+                    39.4907718395457
+                ]
+            },
+            "properties": {
+                "name": "Corts Valencianes (imparell) - Metro Beniferri",
+                "stopId": "1566",
+                "routes": "62 - Estaci\u00f3 del Nord, 63 - Estaci\u00f3 del Nord, 99 - la Malva-rosa",
+                "location": "AV CORTS VALENCIANES 35 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.407025099373924,
+                    39.4909206366065
+                ]
+            },
+            "properties": {
+                "name": "Mestre Rodrigo - Canal de Navarr\u00e9s",
+                "stopId": "1962",
+                "routes": "67 - Nou Campanar",
+                "location": "AV MAESTRO RODRIGO 88 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.399523852635244,
+                    39.491046210747
+                ]
+            },
+            "properties": {
+                "name": "Corts Valencianes (parell) - Metro Beniferri",
+                "stopId": "376",
+                "routes": "62 - Benim\u00e0met/fira, 63 - Campus de Burjassot, 99 - Palau de Congressos",
+                "location": "AV CORTS VALENCIANES 22 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.406692352669744,
+                    39.4925824896977
+                ]
+            },
+            "properties": {
+                "name": "Camp de T\u00faria - Marina Baixa",
+                "stopId": "1700",
+                "routes": "62 - Estaci\u00f3 del Nord, 67 - Nou Campanar",
+                "location": "C CAMP DEL TURIA S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.406615151121372,
+                    39.4930699631175
+                ]
+            },
+            "properties": {
+                "name": "Camp de T\u00faria - Mestre Rodrigo",
+                "stopId": "1448",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C CAMP DEL TURIA 16 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402277924347051,
+                    39.4938774938753
+                ]
+            },
+            "properties": {
+                "name": "Corts Valencianes - L'Alt Maestrat",
+                "stopId": "403",
+                "routes": "62 - Estaci\u00f3 del Nord, 63 - Estaci\u00f3 del Nord, 99 - la Malva-rosa",
+                "location": "AV CORTS VALENCIANES S/N (CARRIL BUS) (IMPAR) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.40366049333351,
+                    39.4939437436427
+                ]
+            },
+            "properties": {
+                "name": "Camp de T\u00faria (imparell) - Corts Valencianes",
+                "stopId": "1321",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C CAMP DEL TURIA 6 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.401792630784615,
+                    39.4941905784554
+                ]
+            },
+            "properties": {
+                "name": "Corts Valencianes - Palau de Congressos",
+                "stopId": "1319",
+                "routes": "62 - Benim\u00e0met/fira, 63 - Campus de Burjassot, 99 - Palau de Congressos",
+                "location": "AV CORTS VALENCIANES P.CONGRESSOS (PAR) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.404004193537992,
+                    39.4943253414252
+                ]
+            },
+            "properties": {
+                "name": "Camp de T\u00faria (parell) - Corts Valencianes",
+                "stopId": "1320",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C CAMP DEL TURIA 6 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396210688076546,
+                    39.4956788495717
+                ]
+            },
+            "properties": {
+                "name": "Parc de Benicalap",
+                "stopId": "310",
+                "routes": "28 - Ciutat Art. Faller",
+                "location": "C LUIS BRAILLE 2 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396287726409745,
+                    39.4957989514648
+                ]
+            },
+            "properties": {
+                "name": "Parc de Benicalap",
+                "stopId": "314",
+                "routes": "28 - Estaci\u00f3 del Nord",
+                "location": "C LUIS BRAILLE 2 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.392857042195316,
+                    39.4959670628967
+                ]
+            },
+            "properties": {
+                "name": "Equador - Salvador Tuset",
+                "stopId": "1832",
+                "routes": "12 - Pl. Am\u00e8rica",
+                "location": "AV ECUADOR  EL 93 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.392778232094679,
+                    39.4960789674019
+                ]
+            },
+            "properties": {
+                "name": "Equador - Pintor Matarana",
+                "stopId": "1067",
+                "routes": "12 - Ciutat Fallera",
+                "location": "AV ECUADOR  EL 93 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394939847432149,
+                    39.4975125080324
+                ]
+            },
+            "properties": {
+                "name": "Andreu Alfaro - Louis Braille",
+                "stopId": "2303",
+                "routes": "12 - Pl. Am\u00e8rica, 28 - Estaci\u00f3 del Nord",
+                "location": "C FRANCISCO MOROTE GREUS 2 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393799797044859,
+                    39.498311092828
+                ]
+            },
+            "properties": {
+                "name": "Sant Josep Artes\u00e0 - Luis Mart\u00ed Alegre",
+                "stopId": "311",
+                "routes": "12 - Ciutat Fallera, 28 - Ciutat Art. Faller",
+                "location": "AV SAN JOSE ARTESANO 16 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394510305726936,
+                    39.4999428470576
+                ]
+            },
+            "properties": {
+                "name": "Foc - Amadeu Desfilis",
+                "stopId": "1170",
+                "routes": "12 - Pl. Am\u00e8rica, 28 - Estaci\u00f3 del Nord",
+                "location": "C FOC  DEL 1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.393280308292197,
+                    39.5005441807215
+                ]
+            },
+            "properties": {
+                "name": "Ciutat de l'Artista Faller",
+                "stopId": "1326",
+                "routes": "12 - Pl. Am\u00e8rica, 28 - Ciutat Art. Faller",
+                "location": "C NINOT  DEL 19 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.417637598984453,
+                    39.4991835330983
+                ]
+            },
+            "properties": {
+                "name": "Mercat de Benim\u00e0met",
+                "stopId": "2161",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C RAFAEL TENES ESCRICH 4 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.417328295253443,
+                    39.499555465644
+                ]
+            },
+            "properties": {
+                "name": "Doctor Soriano Benlloch - Rafael Tenes Escrich",
+                "stopId": "383",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C DOCTOR SORIANO BENLLOCH 2 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.425298058284953,
+                    39.5009190778395
+                ]
+            },
+            "properties": {
+                "name": "Polvor\u00ed - Campament",
+                "stopId": "394",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C SENDA DEL POLVORIN HOTEL - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.425226636757672,
+                    39.5009917887019
+                ]
+            },
+            "properties": {
+                "name": "Polvor\u00ed - Sinarques",
+                "stopId": "387",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C SENDA DEL POLVORIN DAVANT HOTEL - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.42325347261047,
+                    39.5013434596603
+                ]
+            },
+            "properties": {
+                "name": "Campament (parell) - Joaqu\u00edn Mar\u00edn",
+                "stopId": "386",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C CAMPAMENTO  DEL 55 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.419123774270939,
+                    39.5014278992805
+                ]
+            },
+            "properties": {
+                "name": "Felipe Valls - Llu\u00eds Cano",
+                "stopId": "397",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C FELIPE VALLS 59 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.418754805718082,
+                    39.5014562066501
+                ]
+            },
+            "properties": {
+                "name": "Benim\u00e0met",
+                "stopId": "384",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "PL LUIS CANO 6 (DAVANT) - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.422694116538429,
+                    39.5014869984147
+                ]
+            },
+            "properties": {
+                "name": "Campament (imparell) - Joaqu\u00edn Mar\u00edn",
+                "stopId": "395",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C CAMPAMENTO  DEL 53 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.426272562159195,
+                    39.5016887769404
+                ]
+            },
+            "properties": {
+                "name": "Vel\u00f2drom Llu\u00eds Puig",
+                "stopId": "393",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C SENDA DEL POLVORIN 24 (DAVANT) - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.426394091100048,
+                    39.5023067447204
+                ]
+            },
+            "properties": {
+                "name": "Polvor\u00ed - Vel\u00f2drom Llu\u00eds Puig",
+                "stopId": "1153",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C SENDA DEL POLVORIN 32 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.420093429559035,
+                    39.5024199988926
+                ]
+            },
+            "properties": {
+                "name": "Pintor Garnelo - Campament",
+                "stopId": "396",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C PINTOR GARNELO 3 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.420339797210343,
+                    39.5026391402319
+                ]
+            },
+            "properties": {
+                "name": "Campament - Felipe Valls",
+                "stopId": "385",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C CAMPAMENTO  DEL 8 - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.426239016553879,
+                    39.5033015224841
+                ]
+            },
+            "properties": {
+                "name": "Fira Val\u00e8ncia",
+                "stopId": "388",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "AV FERIAS  DE LAS 2 (jto.Hotel) - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.426479414804319,
+                    39.5034518985385
+                ]
+            },
+            "properties": {
+                "name": "Avinguda de les Fires - Metro Fira Val\u00e8ncia",
+                "stopId": "392",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "AV FERIAS  DE LAS PORTA PRINCIPAL - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.424359059683825,
+                    39.5054992691843
+                ]
+            },
+            "properties": {
+                "name": "Fires (parell) - Cementeri",
+                "stopId": "1715",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "AV FERIAS  DE LAS S/N - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.424653220899973,
+                    39.5055148166554
+                ]
+            },
+            "properties": {
+                "name": "Fires (imparell) - Cementeri",
+                "stopId": "1714",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "AV FERIAS  DE LAS S/N - BENIM\u00c0MET"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.429459114498043,
+                    39.5069605341335
+                ]
+            },
+            "properties": {
+                "name": "Alginet - Alcossebre",
+                "stopId": "391",
+                "routes": "62 - Estaci\u00f3 del Nord",
+                "location": "C ALGINET 11 - PATERNA (Terramelar)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.429120708177994,
+                    39.5071592901223
+                ]
+            },
+            "properties": {
+                "name": "Alginet - Algemes\u00ed",
+                "stopId": "389",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C ALGINET 4 - PATERNA (Terramelar)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.416716322265703,
+                    39.5078075415364
+                ]
+            },
+            "properties": {
+                "name": "Poliesportiu de Burjassot",
+                "stopId": "1044",
+                "routes": "63 - Campus de Burjassot",
+                "location": "AV VICENTE ANDRES ESTELLES POLIESPORTIU - BURJASSOT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.427930701579969,
+                    39.5081935519292
+                ]
+            },
+            "properties": {
+                "name": "Terramelar",
+                "stopId": "390",
+                "routes": "62 - Benim\u00e0met/fira",
+                "location": "C ALMASSORA 1 - PATERNA (Terramelar)"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.420535567285886,
+                    39.5089554660896
+                ]
+            },
+            "properties": {
+                "name": "Campus de Burjassot",
+                "stopId": "1145",
+                "routes": "63 - Campus de Burjassot",
+                "location": "AV VICENTE ANDRES ESTELLES S/N - BURJASSOT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.382711232060891,
+                    39.5027825526628
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Entrada Cam\u00ed Carpesa",
+                "stopId": "282",
+                "routes": "26 - Moncada-Alfara",
+                "location": "CAMI MONCADA 188 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383804383949644,
+                    39.5050306453214
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Poble Nou (imparell)",
+                "stopId": "302",
+                "routes": "26 - Poeta Querol",
+                "location": "CAMI MONCADA 217 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.383697366759702,
+                    39.505056690811
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Poble Nou (parell)",
+                "stopId": "283",
+                "routes": "26 - Moncada-Alfara",
+                "location": "CAMI MONCADA 218 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.3841061253272,
+                    39.5064397797121
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Carretera Daniel",
+                "stopId": "301",
+                "routes": "26 - Poeta Querol",
+                "location": "CAMI MONCADA 247 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.384019505027492,
+                    39.5068479195629
+                ]
+            },
+            "properties": {
+                "name": "Cam\u00ed de Moncada - Casa d'\u00c0ngel",
+                "stopId": "284",
+                "routes": "26 - Moncada-Alfara",
+                "location": "CAMI MONCADA 260 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.400991282365261,
+                    39.4954966262152
+                ]
+            },
+            "properties": {
+                "name": "Palau de Congressos",
+                "stopId": "2230",
+                "routes": "99 - la Malva-rosa",
+                "location": "C CAMP DEL TURIA 2ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.397432631294019,
+                    39.4955744903869
+                ]
+            },
+            "properties": {
+                "name": "Quartell - Metro Florista",
+                "stopId": "1330",
+                "routes": "28 - Estaci\u00f3 del Nord",
+                "location": "C CUARTELL 4 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370634733826518,
+                    39.4818183674727
+                ]
+            },
+            "properties": {
+                "name": "Alboraia - Centre d'especialitats",
+                "stopId": "2231",
+                "routes": "11 - Els Orriols",
+                "location": "C ALBORAYA 24-26 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370351986613805,
+                    39.4851680523467
+                ]
+            },
+            "properties": {
+                "name": "Molinell (imparell) - Alboraia",
+                "stopId": "1806",
+                "routes": "98 - Av. del Cid",
+                "location": "C MOLINELL 1 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370674330767631,
+                    39.4861381016307
+                ]
+            },
+            "properties": {
+                "name": "Almassora - Argenter Su\u00e0rez",
+                "stopId": "2233",
+                "routes": "11 - Patraix",
+                "location": "C ALMAZORA 56 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370957156147121,
+                    39.4897638456443
+                ]
+            },
+            "properties": {
+                "name": "Primat Reig - Ministre Llu\u00eds Maians",
+                "stopId": "1277",
+                "routes": "11 - Patraix",
+                "location": "AV PRIMADO REIG 18 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.371041981152771,
+                    39.4900468800218
+                ]
+            },
+            "properties": {
+                "name": "Primat Reig - Sant Vicent de Pa\u00fcl",
+                "stopId": "197",
+                "routes": "11 - Els Orriols, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV PRIMADO REIG 35 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.371488795719007,
+                    39.4901535016558
+                ]
+            },
+            "properties": {
+                "name": "Primat Reig - Bilbao",
+                "stopId": "206",
+                "routes": "90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV PRIMADO REIG 14 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370581476255494,
+                    39.4908807862021
+                ]
+            },
+            "properties": {
+                "name": "Sant Vicent de Pa\u00fcl - Pen\u00edscola",
+                "stopId": "1080",
+                "routes": "11 - Patraix",
+                "location": "C SAN VICENTE DE PAUL 15 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.371618894470013,
+                    39.4921700161921
+                ]
+            },
+            "properties": {
+                "name": "Pare Vi\u00f1as - Reig Genov\u00e9s",
+                "stopId": "198",
+                "routes": "11 - Els Orriols",
+                "location": "C PADRE VI\u00d1AS 46 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370439012582946,
+                    39.4941266892582
+                ]
+            },
+            "properties": {
+                "name": "Pare Vi\u00f1as - Duc de Mandas",
+                "stopId": "199",
+                "routes": "11 - Els Orriols",
+                "location": "C PADRE VI\u00d1AS 72 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370131519086033,
+                    39.4943553810402
+                ]
+            },
+            "properties": {
+                "name": "Duc de Mandas (imparell) - Arquitecte Rodr\u00edguez",
+                "stopId": "1845",
+                "routes": "12 - Ciutat Fallera",
+                "location": "C DUQUE DE MANDAS 17 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.371912742652673,
+                    39.4945802367798
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Duc de Mandas",
+                "stopId": "246",
+                "routes": "16 - Vinalesa",
+                "location": "AV CONSTITUCION 216 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370859933741143,
+                    39.4946906315288
+                ]
+            },
+            "properties": {
+                "name": "Duc de Mandas - Constituci\u00f3",
+                "stopId": "1838",
+                "routes": "11 - Patraix, 12 - Pl. Am\u00e8rica",
+                "location": "C DUQUE DE MANDAS 8 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.372232747867506,
+                    39.4961294149849
+                ]
+            },
+            "properties": {
+                "name": "Tossal del Rei",
+                "stopId": "1133",
+                "routes": "12 - Pl. Am\u00e8rica, 16 - Poeta Querol",
+                "location": "C CONDE DE LUMIARES 26 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370815523574556,
+                    39.4965349987106
+                ]
+            },
+            "properties": {
+                "name": "Constituci\u00f3 - Sant Joan de la Penya",
+                "stopId": "247",
+                "routes": "16 - Vinalesa",
+                "location": "AV CONSTITUCION 256 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370230037474906,
+                    39.4988762228547
+                ]
+            },
+            "properties": {
+                "name": "Sant Miquel dels Reis",
+                "stopId": "248",
+                "routes": "16 - Vinalesa",
+                "location": "AV CONSTITUCION 282 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.370273530092155,
+                    39.4993079292557
+                ]
+            },
+            "properties": {
+                "name": "Sant Miquel dels Reis (front)",
+                "stopId": "259",
+                "routes": "16 - Poeta Querol",
+                "location": "AV CONSTITUCION 273 - VAL\u00c8NCIA"
             }
         }
     ]
