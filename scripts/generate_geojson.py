@@ -1,74 +1,42 @@
-import time
-import logging
 import emtvlcapi
 import geojson
+import logging
 
-# Configura el logger
+# Configurar los logs para ver el proceso
 logging.basicConfig(level=logging.INFO)
 
-# Definir un área más grande para la búsqueda (ajusta las coordenadas)
-zones = [
-    (39.39, -0.45, 39.42, -0.43),
-    (39.42, -0.43, 39.45, -0.40),
-    (39.45, -0.40, 39.47, -0.38),
-    (39.47, -0.38, 39.50, -0.35),
-    (39.50, -0.35, 39.52, -0.33),
-    (39.52, -0.33, 39.54, -0.30),
-    (39.54, -0.30, 39.56, -0.28),
-    (39.56, -0.28, 39.58, -0.25),
-    (39.58, -0.25, 39.60, -0.22),
-]
-
-# Función para obtener paradas con reintentos
-def get_stops_with_retry(lat1, lon1, lat2, lon2):
-    retries = 3
-    for attempt in range(retries):
-        try:
-            logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
-            stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
-            if not stops:  # Si no hay datos, loguear un aviso
-                logging.warning(f"No stops found for the area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
-            return stops
-        except Exception as e:
-            logging.error(f"Attempt {attempt + 1} failed: {e}")
-            if attempt == retries - 1:
-                logging.error("Max retries reached, skipping this area.")
-                return []  # Retorna lista vacía si se superaron los reintentos
-            time.sleep(2)  # Espera antes de reintentar
-
-# Función para generar el GeoJSON
+# Función para obtener las paradas en una zona determinada
 def create_geojson():
-    all_stops = []
-    for zone in zones:
-        lat1, lon1, lat2, lon2 = zone
-        stops = get_stops_with_retry(lat1, lon1, lat2, lon2)
-        all_stops.extend(stops)
+    # Definir las coordenadas de la zona (puedes ajustar las coordenadas a tu gusto)
+    lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  # Ejemplo de coordenadas de Valencia
     
-    if not all_stops:
-        logging.warning("No stops found in any of the zones.")
-    
-    features = []
-    for stop in all_stops:
-        # Crear un feature por cada parada
-        feature = geojson.Feature(
-            geometry=geojson.Point((float(stop['lon']), float(stop['lat']))),
-            properties={
-                "name": stop.get("name"),
-                "stopId": stop.get("stopId"),
-                "routes": stop.get("routes"),
-            }
-        )
-        features.append(feature)
-    
-    # Crear el archivo GeoJSON
-    feature_collection = geojson.FeatureCollection(features)
-    
-    # Guardar el archivo
-    with open('data/stops_with_bus_times.geojson', 'w') as f:
-        geojson.dump(feature_collection, f)
-    
-    logging.info(f"GeoJSON file created with {len(features)} features.")
+    # Obtener las paradas en esa zona
+    logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
+    stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
 
-# Ejecutar la función para crear el GeoJSON
-if __name__ == "__main__":
-    create_geojson()
+    # Crear el objeto GeoJSON
+    geojson_data = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+
+    for stop in stops:
+        feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [stop['lon'], stop['lat']]  # Asegúrate de usar las claves correctas de longitud y latitud
+            },
+            "properties": {
+                "name": stop['name'],  # Nombre de la parada
+                "id": stop['id'],      # ID de la parada (puedes agregar más datos si lo deseas)
+            }
+        }
+        geojson_data['features'].append(feature)
+    
+    # Guardar el archivo GeoJSON
+    with open('data/stops.geojson', 'w') as f:
+        geojson.dump(geojson_data, f)
+
+# Llamada a la función para generar el GeoJSON
+create_geojson()
