@@ -3,7 +3,7 @@ import json
 
 def create_geojson(lat1, lon1, lat2, lon2):
     # Obtener paradas dentro del área especificada
-    stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+    stops = emtvalencia.get_stops_in_extent(lat1, lon1, lat2, lon2)
 
     # Formatear los datos en GeoJSON
     geojson = {
