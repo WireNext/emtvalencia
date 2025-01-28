@@ -26,8 +26,11 @@ jobs:
     - name: Run the script to generate GeoJSON
       run: python scripts/generate_geojson.py
 
+    - name: List files in the data directory
+      run: ls -la data
+
     - name: Commit and push the generated file
       run: |
         git add data/stops.geojson
-        git commit -m "Add generated GeoJSON file"
+        git commit -m "Add generated GeoJSON file" || git commit --allow-empty -m "Empty commit to trigger action"
         git push
