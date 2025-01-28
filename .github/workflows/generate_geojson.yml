@@ -1,0 +1,35 @@
+name: Generate and Deploy GeoJSON
+
+on:
+  push:
+    branches:
+      - main  # Ejecutar cuando haya cambios en la rama `main`
+  workflow_dispatch: # Permite ejecutarlo manualmente
+
+jobs:
+  generate-geojson:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generate GeoJSON
+        run: |
+          mkdir -p data
+          python scripts/generate_geojson.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./data
