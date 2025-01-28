@@ -60,9 +60,11 @@ def get_all_stops():
             "properties": {
                 "name": stop['name'],
                 "stopId": stop['stopId'],
-                "routes": ", ".join([f"{route['SN']} - {route['LN']}" for route in stop['routes']]),
                 "location": stop['ubica'],
-                "bus_times": bus_times_info  # Añadir los tiempos de los autobuses
+                "routes": ", ".join([f"{route['SN']} - {route['LN']}" for route in stop['routes']]),
+                "bus_times": bus_times_info,  # Añadir los tiempos de los autobuses
+                "address": stop.get('address', 'N/A'),  # Información de dirección adicional
+                "zone": stop.get('zone', 'N/A')  # Zona o barrio donde se encuentra la parada
             }
         }
         geojson["features"].append(feature)
