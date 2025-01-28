@@ -1,22 +1,35 @@
+name: Generate GeoJSON
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Check out the repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Git config
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
 
-      - name: Create GeoJSON
-        run: |
-          mkdir -p data
-          python scripts/generate_geojson.py
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt  # Instalar dependencias de requirements.txt
+        pip install geojson  # Asegurarse de que geojson esté instalado
 
-      - name: Commit and push changes
-        run: |
-          git add data/stops_with_bus_times.geojson
-          git commit -m "Generated GeoJSON with bus times"
-          git push
+    - name: Run the script to generate GeoJSON
+      run: |
+        mkdir -p data
+        python scripts/generate_geojson.py  # Ejecutar el script
+
+    - name: Commit generated GeoJSON file
+      run: |
+        git add data/stops_with_bus_times.geojson
+        git commit -m "Añadir archivo de paradas con tiempos de autobús"
+        git push origin main
