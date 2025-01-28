@@ -1,12 +1,37 @@
 import emtvlcapi
 import json
+import time
 
+# Función para obtener paradas en una extensión de coordenadas
+def get_stops_with_retry(lat1, lon1, lat2, lon2, retries=3):
+    for _ in range(retries):
+        # Intentar obtener las paradas
+        stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+        
+        # Si la respuesta tiene paradas, devolverlas
+        if stops:
+            return stops
+        
+        # Si no hay resultados, esperar un poco y reintentar
+        print(f"No stops found in the area: ({lat1}, {lon1}) to ({lat2}, {lon2}). Retrying...")
+        time.sleep(2)  # Esperar 2 segundos antes de reintentar
+    
+    # Si no se encuentran paradas después de los reintentos, devolver una lista vacía
+    print("No stops found after retries.")
+    return []
+
+# Función para convertir las paradas a formato GeoJSON
 def create_geojson(lat1, lon1, lat2, lon2):
-    stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+    # Obtener las paradas con reintentos
+    stops = get_stops_with_retry(lat1, lon1, lat2, lon2)
+    
+    # Estructura base del GeoJSON
     geojson = {
         "type": "FeatureCollection",
         "features": []
     }
+
+    # Convertir las paradas a formato GeoJSON
     for stop in stops:
         feature = {
             "type": "Feature",
@@ -27,31 +52,33 @@ def create_geojson(lat1, lon1, lat2, lon2):
 
     return geojson
 
+# Función principal para obtener todas las paradas
 def fetch_all_stops():
-    # Dividir el área en 4 subáreas (ajustar según sea necesario)
+    # Definir las coordenadas para dividir la ciudad en áreas
     subareas = [
-        (39.471964, -0.394641, 39.473000, -0.399000),
-        (39.473000, -0.399000, 39.474714, -0.405906),
-        (39.471964, -0.399000, 39.473000, -0.405906),
-        (39.473000, -0.405906, 39.474714, -0.411000),
+        (39.460000, -0.390000, 39.510000, -0.420000),  # Área grande que cubre el centro de Valencia
+        (39.471964, -0.394641, 39.473000, -0.399000),  # Subárea
+        (39.473000, -0.399000, 39.474714, -0.405906),  # Subárea
+        (39.474714, -0.405906, 39.476000, -0.410000)   # Otra subárea
     ]
     
+    # Crear la estructura del GeoJSON
     geojson = {
         "type": "FeatureCollection",
         "features": []
     }
     
+    # Obtener las paradas de cada subárea
     for lat1, lon1, lat2, lon2 in subareas:
         print(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
-        # Obtener las paradas en la subárea
         stops = create_geojson(lat1, lon1, lat2, lon2)
-        geojson["features"].extend(stops["features"])  # Agregar las paradas a la colección
-
+        geojson["features"].extend(stops["features"])  # Agregar las paradas obtenidas al GeoJSON
+    
     return geojson
 
-# Generar y guardar el archivo GeoJSON
+# Ejecutar la función principal y guardar el archivo GeoJSON
 if __name__ == "__main__":
-    all_stops_geojson = fetch_all_stops()
+    all_stops_geojson = fetch_all_stops()  # Obtener todas las paradas en formato GeoJSON
     with open("data/stops.geojson", "w") as f:
-        json.dump(all_stops_geojson, f, indent=4)
+        json.dump(all_stops_geojson, f, indent=4)  # Guardar el GeoJSON en un archivo
     print("Archivo GeoJSON generado: data/stops.geojson")
