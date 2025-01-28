@@ -1,0 +1,197 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.405557646728925,
+                    39.4720863651511
+                ]
+            },
+            "properties": {
+                "name": "Ciutat Administrativa 9 d'Octubre - Cieza",
+                "stopId": "2070",
+                "routes": "73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre, 95 - Hospital General, 98 - Av. del Cid, 99 - la Malva-rosa",
+                "location": "C NUEVE DE OCTUBRE 8 ACC - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.400246171221828,
+                    39.4723802434791
+                ]
+            },
+            "properties": {
+                "name": "Brasil - Vel\u00e1zquez",
+                "stopId": "473",
+                "routes": "73 - Estaci\u00f3 del Nord",
+                "location": "C BRASIL 71 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.405338478981273,
+                    39.4724511866823
+                ]
+            },
+            "properties": {
+                "name": "Ciutat Administrativa 9 d'Octubre - Democr\u00e0cia",
+                "stopId": "2072",
+                "routes": "73 - Estaci\u00f3 del Nord, 95 - Marina Real",
+                "location": "C NUEVE DE OCTUBRE S/N - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402808998212317,
+                    39.4727159109523
+                ]
+            },
+            "properties": {
+                "name": "Democr\u00e0cia - Conselleries",
+                "stopId": "2306",
+                "routes": "73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C CASTAN TOBE\u00d1AS 80 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.400259488352464,
+                    39.4734722400679
+                ]
+            },
+            "properties": {
+                "name": "Democr\u00e0cia - Vel\u00e1zquez",
+                "stopId": "2305",
+                "routes": "73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C CASTAN TOBE\u00d1AS 48 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.402715463836569,
+                    39.4735509863327
+                ]
+            },
+            "properties": {
+                "name": "Petxina - Rac\u00f3 d'Adem\u00fas",
+                "stopId": "472",
+                "routes": "73 - Estaci\u00f3 del Nord, 95 - Marina Real",
+                "location": "PSEG PECHINA 71 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.397398718708205,
+                    39.4739891661836
+                ]
+            },
+            "properties": {
+                "name": "Democr\u00e0cia - Baladre",
+                "stopId": "2304",
+                "routes": "73 - Tres Creus - St. Isidre / Tres Creus-St. Isidre",
+                "location": "C CASTAN TOBE\u00d1AS 18 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.399309640546605,
+                    39.4742104895589
+                ]
+            },
+            "properties": {
+                "name": "Petxina - Torres",
+                "stopId": "1421",
+                "routes": "95 - Marina Real",
+                "location": "PSEG PECHINA 53 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.394850072688057,
+                    39.4738383686974
+                ]
+            },
+            "properties": {
+                "name": "P\u00e9rez Gald\u00f3s - Sant Josep de la Muntanya",
+                "stopId": "1865",
+                "routes": "67 - Nou Campanar",
+                "location": "AV PEREZ GALDOS 131 (DAVANT) - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395542378252472,
+                    39.4744792697552
+                ]
+            },
+            "properties": {
+                "name": "P\u00e9rez Gald\u00f3s - Democr\u00e0cia",
+                "stopId": "425",
+                "routes": "67 - Estaci\u00f3 del Nord, 89 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV PEREZ GALDOS 137 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.395372487768254,
+                    39.474582310034
+                ]
+            },
+            "properties": {
+                "name": "P\u00e9rez Gald\u00f3s - Doctor Zamenhof",
+                "stopId": "443",
+                "routes": "90 - Circular Ronda Tr\u00e0nsits",
+                "location": "AV PEREZ GALDOS 128 - VAL\u00c8NCIA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.396753858586019,
+                    39.4746477892431
+                ]
+            },
+            "properties": {
+                "name": "Petxina - P\u00e9rez Galdos",
+                "stopId": "1422",
+                "routes": "95 - Marina Real",
+                "location": "PSEG PECHINA 47 - VAL\u00c8NCIA"
+            }
+        }
+    ]
+}
