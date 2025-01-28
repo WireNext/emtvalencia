@@ -17,7 +17,7 @@ def get_stops_with_retry(lat1, lon1, lat2, lon2, retries=3):
         time.sleep(2)  # Esperar 2 segundos antes de reintentar
     
     # Si no se encuentran paradas después de los reintentos, devolver una lista vacía
-    print("No stops found after retries.")
+    print(f"No stops found after {retries} retries in area: ({lat1}, {lon1}) to ({lat2}, {lon2}).")
     return []
 
 # Función para convertir las paradas a formato GeoJSON
@@ -25,6 +25,12 @@ def create_geojson(lat1, lon1, lat2, lon2):
     # Obtener las paradas con reintentos
     stops = get_stops_with_retry(lat1, lon1, lat2, lon2)
     
+    if not stops:  # Si no se obtienen paradas, devolver un GeoJSON vacío
+        return {
+            "type": "FeatureCollection",
+            "features": []
+        }
+
     # Estructura base del GeoJSON
     geojson = {
         "type": "FeatureCollection",
@@ -54,12 +60,12 @@ def create_geojson(lat1, lon1, lat2, lon2):
 
 # Función principal para obtener todas las paradas
 def fetch_all_stops():
-    # Definir las coordenadas para dividir la ciudad en áreas
+    # Definir las coordenadas para dividir la ciudad en áreas más amplias
     subareas = [
-        (39.460000, -0.390000, 39.510000, -0.420000),  # Área grande que cubre el centro de Valencia
-        (39.471964, -0.394641, 39.473000, -0.399000),  # Subárea
-        (39.473000, -0.399000, 39.474714, -0.405906),  # Subárea
-        (39.474714, -0.405906, 39.476000, -0.410000)   # Otra subárea
+        (39.460000, -0.390000, 39.510000, -0.420000),  # Área más grande que cubre el centro de Valencia
+        (39.471964, -0.394641, 39.476000, -0.400000),  # Subárea más amplia
+        (39.473000, -0.399000, 39.478000, -0.405000),  # Subárea
+        (39.474000, -0.405000, 39.479000, -0.410000)   # Otra subárea más amplia
     ]
     
     # Crear la estructura del GeoJSON
