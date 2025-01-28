@@ -1,79 +1,46 @@
 import emtvlcapi
-import json
+import geojson
 
-# Función para obtener los tiempos de autobús para una parada específica
-def get_bus_times_for_stop(stop_id):
-    try:
-        # Obtener los tiempos de autobús para una parada específica
-        bus_times = emtvlcapi.get_bus_times(stop_id)
-        return bus_times
-    except Exception as e:
-        print(f"Error al obtener los tiempos de autobús para la parada {stop_id}: {e}")
-        return []
+# Definir las coordenadas de Valencia y dividirla en zonas más pequeñas
+lat_min = 39.39  # Latitud mínima
+lat_max = 39.54  # Latitud máxima
+lon_min = -0.45  # Longitud mínima
+lon_max = -0.35  # Longitud máxima
 
-# Función para obtener todas las paradas en la ciudad de Valencia (sin dividir en subáreas)
-def get_all_stops():
-    # Definir las coordenadas de Valencia en su totalidad
-    lat1, lon1 = 39.360000, -0.500000  # Coordenadas aproximadas del suroeste de Valencia
-    lat2, lon2 = 39.550000, -0.300000  # Coordenadas aproximadas del noreste de Valencia
+# Definir el número de pasos para dividir la ciudad en cuadrantes más pequeños
+steps_lat = 5  # Número de zonas en latitud (aquí dividimos en 5 partes)
+steps_lon = 5  # Número de zonas en longitud (aquí dividimos en 5 partes)
 
-    # Obtener las paradas dentro de este rectángulo
-    stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+# Calcular el tamaño de cada zona
+lat_step = (lat_max - lat_min) / steps_lat
+lon_step = (lon_max - lon_min) / steps_lon
 
-    # Si no se encuentran paradas, devolver un GeoJSON vacío
-    if not stops:
-        return {
-            "type": "FeatureCollection",
-            "features": []
-        }
+# Función para dividir la ciudad en zonas más pequeñas y obtener las paradas
+def divide_and_get_stops():
+    all_stops = []  # Lista para almacenar todas las paradas
+    for i in range(steps_lat):
+        for j in range(steps_lon):
+            lat1 = lat_min + i * lat_step  # Latitud inferior de la zona
+            lon1 = lon_min + j * lon_step  # Longitud inferior de la zona
+            lat2 = lat_min + (i + 1) * lat_step  # Latitud superior de la zona
+            lon2 = lon_min + (j + 1) * lon_step  # Longitud superior de la zona
+            
+            # Imprimir las coordenadas de la zona que se está procesando
+            print(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
+            
+            # Obtener las paradas dentro del área de la zona
+            stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+            
+            # Agregar las paradas obtenidas a la lista general
+            all_stops.extend(stops)
+    
+    return all_stops
 
-    # Crear el GeoJSON
-    geojson = {
-        "type": "FeatureCollection",
-        "features": []
-    }
+# Llamar a la función para obtener todas las paradas
+stops = divide_and_get_stops()
 
-    # Convertir las paradas a formato GeoJSON
-    for stop in stops:
-        stop_id = stop['stopId']
-        
-        # Obtener los tiempos de autobús para esta parada
-        bus_times = get_bus_times_for_stop(stop_id)
+# Generar el archivo GeoJSON con los datos obtenidos
+with open("data/stops.geojson", "w") as geojson_file:
+    geojson.dump(stops, geojson_file)
 
-        # Preparar la lista de horarios de autobús
-        bus_times_info = []
-        for time in bus_times:
-            bus_info = {
-                "line": time.get("linea", ""),
-                "destination": time.get("destino", ""),
-                "minutes_left": time.get("minutos", ""),
-                "arrival_time": time.get("horaLlegada", "")
-            }
-            bus_times_info.append(bus_info)
-
-        feature = {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [float(stop['lon']), float(stop['lat'])]
-            },
-            "properties": {
-                "name": stop['name'],
-                "stopId": stop['stopId'],
-                "location": stop['ubica'],
-                "routes": ", ".join([f"{route['SN']} - {route['LN']}" for route in stop['routes']]),
-                "bus_times": bus_times_info,  # Añadir los tiempos de los autobuses
-                "address": stop.get('address', 'N/A'),  # Información de dirección adicional
-                "zone": stop.get('zone', 'N/A')  # Zona o barrio donde se encuentra la parada
-            }
-        }
-        geojson["features"].append(feature)
-
-    return geojson
-
-# Guardar el archivo GeoJSON con todas las paradas y sus tiempos de autobús
-if __name__ == "__main__":
-    all_stops_geojson = get_all_stops()  # Obtener todas las paradas en formato GeoJSON
-    with open("data/stops_with_bus_times.geojson", "w") as f:
-        json.dump(all_stops_geojson, f, indent=4)  # Guardar el GeoJSON en un archivo
-    print("Archivo GeoJSON generado: data/stops_with_bus_times.geojson")
+print("GeoJSON generado exitosamente con todas las paradas de Valencia.")
