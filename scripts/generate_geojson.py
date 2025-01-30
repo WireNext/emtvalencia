@@ -1,13 +1,12 @@
 import emtvlcapi
 import geojson
 import logging
+import os
 
-# Configurar los logs para ver el proceso
 logging.basicConfig(level=logging.INFO)
 
-# Función para obtener las paradas en una zona determinada
 def create_geojson():
-    lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  # Coordenadas de Valencia
+    lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  
 
     try:
         logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
@@ -31,7 +30,6 @@ def create_geojson():
                 logging.info(f"API Response for stop {stop_id}: {arrival_times}")
 
                 if arrival_times:
-                    # Formatear tiempos en una lista
                     next_buses = "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in arrival_times])
                 else:
                     next_buses = "No disponible"
@@ -49,17 +47,29 @@ def create_geojson():
                 "properties": {
                     "name": stop['name'],
                     "id": stop_id,
-                    "next_buses": next_buses  # Añadir info de autobuses próximos
+                    "next_buses": next_buses
                 }
             }
             geojson_data['features'].append(feature)
         
-        with open('data/stops.geojson', 'w') as f:
+        geojson_path = 'data/stops.geojson'
+
+        # FORZAR QUE EL ARCHIVO SE SOBREESCRIBA
+        if os.path.exists(stops.geojson):
+            os.remove(stops.geojson)  # Borra el archivo viejo
+
+        with open(stops.geojson, 'w') as f:
             geojson.dump(geojson_data, f)
+
         logging.info("GeoJSON file generated successfully.")
+
+        # COMPROBAR SI REALMENTE SE ESCRIBIÓ
+        with open(geojson_path, 'r') as f:
+            content = f.read()
+            logging.info(f"File content: {content[:500]}")  # Muestra solo los primeros 500 caracteres
     
     except Exception as e:
         logging.error(f"An error occurred: {e}")
 
-# Llamada a la función para generar el GeoJSON
+# Llamada a la función
 create_geojson()
