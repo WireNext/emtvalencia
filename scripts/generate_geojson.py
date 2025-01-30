@@ -55,16 +55,16 @@ def create_geojson():
         geojson_path = 'data/stops.geojson'
 
         # FORZAR QUE EL ARCHIVO SE SOBREESCRIBA
-        if os.path.exists(stops.geojson):
-            os.remove(stops.geojson)  # Borra el archivo viejo
+        if os.path.exists(data/stops.geojson):
+            os.remove(data/stops.geojson)  # Borra el archivo viejo
 
-        with open(stops.geojson, 'w') as f:
+        with open(data/stops.geojson, 'w') as f:
             geojson.dump(geojson_data, f)
 
         logging.info("GeoJSON file generated successfully.")
 
         # COMPROBAR SI REALMENTE SE ESCRIBIÓ
-        with open(geojson_path, 'r') as f:
+        with open(data/stops.geojson, 'r') as f:
             content = f.read()
             logging.info(f"File content: {content[:500]}")  # Muestra solo los primeros 500 caracteres
     
