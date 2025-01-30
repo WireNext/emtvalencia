@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 def create_geojson():
     # Definir las coordenadas de la zona (puedes ajustar las coordenadas a tu gusto)
     lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  # Ejemplo de coordenadas de Valencia
-    
+
     try:
         # Obtener las paradas en esa zona
         logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
@@ -27,15 +27,26 @@ def create_geojson():
         }
 
         for stop in stops:
+            stop_id = stop['id']
+            
+            # Obtener tiempos de llegada del próximo autobús
+            try:
+                arrival_times = emtvlcapi.get_arrival_times(stop_id)
+                next_bus_time = arrival_times[0]['time'] if arrival_times else "No disponible"
+            except Exception as e:
+                logging.error(f"Error fetching arrival times for stop {stop_id}: {e}")
+                next_bus_time = "Error"
+
             feature = {
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [stop['lon'], stop['lat']]  # Asegúrate de usar las claves correctas de longitud y latitud
+                    "coordinates": [stop['lon'], stop['lat']]
                 },
                 "properties": {
-                    "name": stop['name'],  # Nombre de la parada
-                    "id": stop['id'],      # ID de la parada (puedes agregar más datos si lo deseas)
+                    "name": stop['name'],
+                    "id": stop_id,
+                    "next_bus": next_bus_time  # Añadir la hora de llegada del próximo bus
                 }
             }
             geojson_data['features'].append(feature)
