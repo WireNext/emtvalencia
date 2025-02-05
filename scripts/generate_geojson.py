@@ -1,89 +1,68 @@
-import asyncio
-import aiohttp
 import emtvlcapi
 import geojson
 import logging
-import os
-import time
+import asyncio
+import aiohttp
 
 logging.basicConfig(level=logging.INFO)
 
-API_URL = "https://api.emtvalencia.es/"  # Asegúrate de que esta URL sea correcta
+# Coordenadas del área de búsqueda (ajustar según necesidades)
+LAT1, LON1, LAT2, LON2 = 39.39, -0.45, 39.42, -0.43  
 
-async def fetch_arrival_times(session, stop):
-    """ Función asíncrona para obtener los tiempos de llegada de una parada """
-    stop_id = stop['id']
+async def fetch_arrival_times(session, stop_id):
+    """ Obtiene los tiempos de llegada de los buses para una parada específica """
     try:
-        async with session.get(f"{API_URL}/getArrivalTimes?stopId={stop_id}") as response:
-            if response.status == 200:
-                arrival_times = await response.json()
-                logging.info(f"API Response for stop {stop_id}: {arrival_times}")
-
-                if arrival_times:
-                    next_buses = "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in arrival_times])
-                else:
-                    next_buses = "No disponible"
-            else:
-                next_buses = "Error"
-                
+        async with session.get(f"https://api.emtvalencia.es/arrival_times/{stop_id}") as response:
+            data = await response.json()
+            if data:
+                return "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in data])
+            return "No disponible"
     except Exception as e:
-        logging.error(f"Error fetching arrival times for stop {stop_id}: {e}")
-        next_buses = "Error"
-
-    return {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [stop['lon'], stop['lat']]
-        },
-        "properties": {
-            "name": stop['name'],
-            "id": stop_id,
-            "next_buses": next_buses
-        }
-    }
+        logging.error(f"Error al obtener tiempos para la parada {stop_id}: {e}")
+        return "Error"
 
 async def create_geojson():
-    lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  
+    """ Genera el archivo GeoJSON con información en paralelo """
+    logging.info(f"Obteniendo paradas en el área: ({LAT1}, {LON1}) a ({LAT2}, {LON2})")
+    stops = emtvlcapi.get_stops_in_extent(LAT1, LON1, LAT2, LON2)
 
-    try:
-        logging.info(f"Fetching stops in area: ({lat1}, {lon1}) to ({lat2}, {lon2})")
-        stops = emtvlcapi.get_stops_in_extent(lat1, lon1, lat2, lon2)
+    if not stops:
+        logging.error("No se encontraron paradas en esta área.")
+        return
 
-        if not stops:
-            logging.error("No stops found in this area.")
-            return
+    geojson_data = {
+        "type": "FeatureCollection",
+        "features": []
+    }
 
-        geojson_data = {
-            "type": "FeatureCollection",
-            "features": []
-        }
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        for stop in stops:
+            stop_id = stop['id']
+            logging.info(f"Obteniendo tiempos de llegada para la parada {stop_id}")
+            tasks.append(fetch_arrival_times(session, stop_id))
 
-        async with aiohttp.ClientSession() as session:
-            tasks = [fetch_arrival_times(session, stop) for stop in stops]
-            results = await asyncio.gather(*tasks)
+        arrival_results = await asyncio.gather(*tasks)
 
-        geojson_data['features'] = results
+        for stop, next_buses in zip(stops, arrival_results):
+            feature = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [stop['lon'], stop['lat']]
+                },
+                "properties": {
+                    "name": stop['name'],
+                    "id": stop['id'],
+                    "next_buses": next_buses
+                }
+            }
+            geojson_data['features'].append(feature)
 
-        geojson_path = "data/stops.geojson"
+    with open('data/stops.geojson', 'w') as f:
+        geojson.dump(geojson_data, f)
 
-        # FORZAR QUE EL ARCHIVO SE SOBREESCRIBA
-        if os.path.exists(geojson_path):
-            os.remove(geojson_path)  # Borra el archivo viejo
+    logging.info("GeoJSON generado con éxito.")
 
-        with open(geojson_path, 'w') as f:
-            geojson.dump(geojson_data, f)
-
-        logging.info("GeoJSON file updated successfully.")
-
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")
-
-async def main():
-    while True:
-        await create_geojson()
-        logging.info("Waiting 30 seconds before next update...")
-        await asyncio.sleep(30)
-
-# Ejecutar el loop asíncrono
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(create_geojson())
