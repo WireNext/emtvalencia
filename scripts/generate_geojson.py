@@ -2,6 +2,7 @@ import emtvlcapi
 import geojson
 import logging
 import os
+import time
 
 logging.basicConfig(level=logging.INFO)
 
@@ -52,24 +53,22 @@ def create_geojson():
             }
             geojson_data['features'].append(feature)
         
-        geojson_path = 'data/stops.geojson'
+        geojson_path = "data/stops.geojson"
 
         # FORZAR QUE EL ARCHIVO SE SOBREESCRIBA
-        if os.path.exists(data/stops.geojson):
-            os.remove(data/stops.geojson)  # Borra el archivo viejo
+        if os.path.exists(geojson_path):
+            os.remove(geojson_path)  # Borra el archivo viejo
 
-        with open(data/stops.geojson, 'w') as f:
+        with open(geojson_path, 'w') as f:
             geojson.dump(geojson_data, f)
 
-        logging.info("GeoJSON file generated successfully.")
+        logging.info("GeoJSON file updated successfully.")
 
-        # COMPROBAR SI REALMENTE SE ESCRIBIÓ
-        with open(data/stops.geojson, 'r') as f:
-            content = f.read()
-            logging.info(f"File content: {content[:500]}")  # Muestra solo los primeros 500 caracteres
-    
     except Exception as e:
         logging.error(f"An error occurred: {e}")
 
-# Llamada a la función
-create_geojson()
+# 🔄 Bucle infinito para actualizar cada 30 segundos
+while True:
+    create_geojson()
+    logging.info("Waiting 30 seconds before next update...")
+    time.sleep(30)
