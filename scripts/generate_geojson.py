@@ -3,8 +3,38 @@ import geojson
 import logging
 import os
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 logging.basicConfig(level=logging.INFO)
+
+def fetch_arrival_times(stop):
+    """ Función para obtener los tiempos de llegada de una parada """
+    stop_id = stop['id']
+    try:
+        arrival_times = emtvlcapi.get_arrival_times(stop_id)
+        logging.info(f"API Response for stop {stop_id}: {arrival_times}")
+
+        if arrival_times:
+            next_buses = "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in arrival_times])
+        else:
+            next_buses = "No disponible"
+            
+    except Exception as e:
+        logging.error(f"Error fetching arrival times for stop {stop_id}: {e}")
+        next_buses = "Error"
+    
+    return {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [stop['lon'], stop['lat']]
+        },
+        "properties": {
+            "name": stop['name'],
+            "id": stop_id,
+            "next_buses": next_buses
+        }
+    }
 
 def create_geojson():
     lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  
@@ -22,37 +52,14 @@ def create_geojson():
             "features": []
         }
 
-        for stop in stops:
-            stop_id = stop['id']
-            logging.info(f"Fetching arrival times for stop {stop_id}")
+        # Ejecutar las peticiones en paralelo
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_stop = {executor.submit(fetch_arrival_times, stop): stop for stop in stops}
+            
+            for future in as_completed(future_to_stop):
+                feature = future.result()
+                geojson_data['features'].append(feature)
 
-            try:
-                arrival_times = emtvlcapi.get_arrival_times(stop_id)
-                logging.info(f"API Response for stop {stop_id}: {arrival_times}")
-
-                if arrival_times:
-                    next_buses = "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in arrival_times])
-                else:
-                    next_buses = "No disponible"
-                    
-            except Exception as e:
-                logging.error(f"Error fetching arrival times for stop {stop_id}: {e}")
-                next_buses = "Error"
-
-            feature = {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [stop['lon'], stop['lat']]
-                },
-                "properties": {
-                    "name": stop['name'],
-                    "id": stop_id,
-                    "next_buses": next_buses
-                }
-            }
-            geojson_data['features'].append(feature)
-        
         geojson_path = "data/stops.geojson"
 
         # FORZAR QUE EL ARCHIVO SE SOBREESCRIBA
