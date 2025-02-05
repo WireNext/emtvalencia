@@ -1,28 +1,35 @@
+import asyncio
+import aiohttp
 import emtvlcapi
 import geojson
 import logging
 import os
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 logging.basicConfig(level=logging.INFO)
 
-def fetch_arrival_times(stop):
-    """ Función para obtener los tiempos de llegada de una parada """
+API_URL = "https://api.emtvalencia.es/"  # Asegúrate de que esta URL sea correcta
+
+async def fetch_arrival_times(session, stop):
+    """ Función asíncrona para obtener los tiempos de llegada de una parada """
     stop_id = stop['id']
     try:
-        arrival_times = emtvlcapi.get_arrival_times(stop_id)
-        logging.info(f"API Response for stop {stop_id}: {arrival_times}")
+        async with session.get(f"{API_URL}/getArrivalTimes?stopId={stop_id}") as response:
+            if response.status == 200:
+                arrival_times = await response.json()
+                logging.info(f"API Response for stop {stop_id}: {arrival_times}")
 
-        if arrival_times:
-            next_buses = "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in arrival_times])
-        else:
-            next_buses = "No disponible"
-            
+                if arrival_times:
+                    next_buses = "; ".join([f"Línea {bus['line']}: {bus['time']} min" for bus in arrival_times])
+                else:
+                    next_buses = "No disponible"
+            else:
+                next_buses = "Error"
+                
     except Exception as e:
         logging.error(f"Error fetching arrival times for stop {stop_id}: {e}")
         next_buses = "Error"
-    
+
     return {
         "type": "Feature",
         "geometry": {
@@ -36,7 +43,7 @@ def fetch_arrival_times(stop):
         }
     }
 
-def create_geojson():
+async def create_geojson():
     lat1, lon1, lat2, lon2 = 39.39, -0.45, 39.42, -0.43  
 
     try:
@@ -52,13 +59,11 @@ def create_geojson():
             "features": []
         }
 
-        # Ejecutar las peticiones en paralelo
-        with ThreadPoolExecutor(max_workers=10) as executor:
-            future_to_stop = {executor.submit(fetch_arrival_times, stop): stop for stop in stops}
-            
-            for future in as_completed(future_to_stop):
-                feature = future.result()
-                geojson_data['features'].append(feature)
+        async with aiohttp.ClientSession() as session:
+            tasks = [fetch_arrival_times(session, stop) for stop in stops]
+            results = await asyncio.gather(*tasks)
+
+        geojson_data['features'] = results
 
         geojson_path = "data/stops.geojson"
 
@@ -74,8 +79,11 @@ def create_geojson():
     except Exception as e:
         logging.error(f"An error occurred: {e}")
 
-# 🔄 Bucle infinito para actualizar cada 30 segundos
-while True:
-    create_geojson()
-    logging.info("Waiting 30 seconds before next update...")
-    time.sleep(30)
+async def main():
+    while True:
+        await create_geojson()
+        logging.info("Waiting 30 seconds before next update...")
+        await asyncio.sleep(30)
+
+# Ejecutar el loop asíncrono
+asyncio.run(main())
